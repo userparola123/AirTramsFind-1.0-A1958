@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+   <button id="button1">Misca ma! dreapta</button>
+   <button id="button2">Misca ma! Stanga</button> 
+</body>
+<script>
+var button1 = document.getElementById("button1")
+var button2 = document.getElementById("button2")
+
+var localStorageItem = window.localStorage.getItem("elementTest")
+
+button1.addEventListener("click", function(){
+    window.localStorage.setItem("elementTest", 'button1')
+    if(window.localStorage.getItem("elementTest") === "button1"){
+        window.localStorage.setItem("elementTest", 'button1')
+        button1.classList.add("color1")
+    } else if(window.localStorage.setItem("elementTest") !== 'button1'){
+        window.localStorage.setItem("elementTest", 'button1')
+        button1.classList.add("color1")
+    }
+})
+
+button2.addEventListener("click", function(){
+    window.localStorage.setItem("elementTest", 'button2')
+    if(window.localStorage.getItem("elementTest") === "button2"){
+        window.localStorage.setItem("elementTest", 'button2')
+        button2.classList.add("color2")
+    } else if(window.localStorage.setItem("elementTest") !== 'button2'){
+        window.localStorage.setItem("elementTest", 'button2')
+        button2.classList.add("color2")
+    }
+})
+</script>
+</html>

@@ -1,0 +1,142 @@
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ACTION CENTER DESIGN */
+
+.ACH2, .ACH3{
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.ACH5{
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 1.5rem;
+}
+
+.actionCenter{
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  z-index: 200;
+  width: 100vw;
+  position: relative;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, -20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.glass{
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(to right bottom, 
+rgba(255, 255, 255, 0.7), 
+rgba(255, 255, 255, 0.3));
+  border-radius: 2rem;
+  z-index: 202;
+  display: flex;
+}
+
+.circle1, .circle2{
+  background: white;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  border-radius: 50%;
+  z-index: 201;
+
+}
+
+
+.dashboard{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(to right bottom, 
+  rgba(255, 255, 255, 0.7), 
+  rgba(255, 255, 255, 0.3));
+  border-radius: 2rem;
+}
+
+.link{
+  display: flex;
+  margin: 2rem 0rem;
+  padding: 1rem 5rem;
+  align-items: center;
+}
+
+.link h2{
+  padding: 0rem 2rem;
+}
+
+.games{
+  flex: 2;
+}
+
+.pro{
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.pro h2{
+  font-family: 'Nunito', sans-serif;
+  font-size: 11px;
+}
+
+.pro img{
+  position: absolute;
+  top: -85%;
+  right: 0%;
+}
+
+.user img{
+  border-radius: 50%;
+}
+
+.pro h2{
+  width: 60%;
+}
+
+.status{
+  margin-bottom: 3rem;
+}
+
+.games{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 5rem;
+}
+
+.card{
+  display: flex;
+  background: linear-gradient(to left top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
+  margin: 2rem 0rem;
+  border-radius: 1rem;
+  padding: 2rem;
+}

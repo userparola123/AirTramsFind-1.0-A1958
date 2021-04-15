@@ -1,0 +1,82 @@
+.containerGuessGame{
+    position: absolute;
+    width: 50%;
+    min-width: 580px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background-color: #FFFFFF;
+    padding: 50px 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins',sans-serif;
+    z-index: 200;
+    text-align: center;
+}
+.containerGuessGame h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+}
+#inputContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerGuessGame input[type="text"]{
+    width: 90px;
+    font-weight: 600;
+    color: #663399;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 2px solid #202020;
+    font-size: 28px;   
+    pointer-events: all;
+    z-index: 201; 
+    cursor: auto;
+    -webkit-user-drag: none;
+}
+.containerGuessGame button{
+    width: 160px;
+    padding: 15px 0;
+    border-radius: 5px;
+    background-color: #663399;
+    color: #FFFFFF;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    outline: none;
+    pointer-events: all;
+    cursor: pointer;
+    text-align: center;
+}
+.containerGuessGame p{
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+}
+
+#mydiv6 {
+    position: absolute;
+    z-index: 9;
+    background-color: white;
+    text-align: end;
+  width: 100%;
+  
+  }
+  .containerGuessGame{
+    display: none;
+  }  

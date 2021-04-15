@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,-20%);
+    width: 500px;
+}
+
+h6{
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%,-85%);
+    color: orange;
+    font-family: cursive;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#connectionFailed{
+    display: none;
+}

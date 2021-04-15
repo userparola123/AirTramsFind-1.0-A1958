@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    overflow: hidden;
+}
+
+.mySystem {
+    display: flex;
+  }
+  
+  .column:nth-child(1) {
+    flex: 30%;
+    background-color: cadetblue;
+    height: 100vh;
+  }
+  .column:nth-child(2) {
+    flex: 70%;
+    background-color: #fff;
+    height: 100vh;
+  }
+
+  .userImage{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .userImage img{
+    animation: imgAnimation 1s ease;
+    width: 150px;
+    transform: translateY(10px);
+  }
+
+  @keyframes imgAnimation{
+    from{
+      transform: translateY(0px);
+    }
+    to{
+      transform: translateY(10px);
+    }
+  }
+
+  .username-text{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: translateY(15px);
+      color: white;
+  }
+
+  .tiles{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(100px);
+    animation: leftComming 1s ease-in;
+  }
+
+  @keyframes leftComming{
+    from{
+      
+    transform: translateX(-300px) translateY(100px);
+    }
+
+    to{
+      transform: translateX(0px) translateY(100px);
+    }
+  }
+
+  .tile1{
+    margin: 20px;
+    padding: 15px 10px;
+    background: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+  }
+
+  .tile2{
+    margin: 20px;
+    padding: 15px 10px;
+    background: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+  }
+
+  .tile3{
+    margin: 20px;
+    padding: 15px 10px;
+    background: #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+  }
+
+  .suggestionsColumn1{
+    width: 90%;
+    height: 15vh;
+    background-color: #F0FF9E;
+    transform: translateY(150px);
+    margin-left: 15px;    
+    margin-right: 15px;
+    border-radius: 5px;
+  }
+
+  label[for="inputCommands"]{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateY(15px);
+    z-index: 9;
+  }
+
+  label[for="inputSearch"]{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateY(15px);
+    z-index: 9;
+    display: none;
+  }
+
+
+  input#inputCommands{
+  width: 45%;
+  padding: 5px;
+  outline: none;
+  
+  }
+
+  input#inputSearch{
+    width: 45%;
+    padding: 5px;
+    outline: none;
+    
+    }
+
+  input#inputCommands:focus{
+    border: 2px solid cadetblue;
+  }
+
+  ::placeholder::before{
+    background-image: url("images-primary/searchicon.png");
+  }
+
+

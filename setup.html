@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="setup.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup</title>
+</head>
+<body>
+    <div class="page-1" id="page-1">
+<h1 class="big-text">Bun venit la Setup!</h1>
+
+<div class="text-box">
+    <p>Ne bucurăm că ați ales AirTramsFind 1.0 Professional. Totuși, înainte
+    să începeți setup-ul, vă trebuie o cheie de produs, pe care o puteți
+    achiziționa din magazinul nostru online, oficial. Dacă aveți una, puteți 
+    continua setup-ul.
+    </p>
+</div>
+<div class="cute-dog-box">
+    <img src="images-primary/cute-dog.png" alt="cute-dog">
+</div>
+
+<div class="next-button-box">
+    <button class="next-button" id="next-button-page-1">
+        Start <img src="images-primary/right-arrow.svg" style="display: inline-block; width: 10px;">
+    </button>
+</div>
+</div>
+<div class="page-2" id="page-2">
+    <h1 class="big-text-p-2">Introduceți cheia de produs</h1>
+    <p class="big-text-p">Cheia de produs este dovada că ați plătit pentru produs.</p>
+    <div class="productKeySpace">
+        <input type="password" autocomplete="off">
+        <p style="color: #000; font-family: 'Poppins', sans-serif; display: inline-block;">- ATF -</p>
+        <input type="password" autocomplete="off">
+        <p style="color: #000; font-family: 'Poppins', sans-serif; display: inline-block;"> - </p>
+        <input type="password" autocomplete="off">
+    </div>
+    <div class="next-button-box-page-2">
+        <button class="next-button-page-2" id="next-button-page-2">
+            Check <img src="images-primary/right-arrow.svg" style="display: inline-block; width: 10px;">
+        </button>
+    </div>
+</div>
+<div class="page-3" id="page-3">
+    <h1 class="big-text-p-3">Să începem cu informațiile simple</h1>
+    <p class="big-text-p">Notă: numele contului Dvs. va fi: </p>
+    <div class="accountSettingsPart1Box">
+      <div class="stepCounterPage3">
+          <p style="display: inline-block; font-family: 'Poppins'; position: relative; left: 90%;">Pas:</p>
+          <p style="display: inline-block; font-family: 'Poppins'; font-weight: 300; position: relative; left: 90%;" id="counterStepsText">0/2</p>
+          <div class="step-1" id="step-1">
+          <p class="big-text-p">Selectați regiunea Dvs.</p>
+          <select id="countrySelect">
+              <option value="Romania">România (RO)</option>
+          </select>
+          <button id="next-button-to-step-2">Continuă</button>
+        </div>
+         <div class="step-2-page-3" id="step-2-page-3" style="display: none;">
+          <p class="big-text-p">Doriți ca aplicația "Vreme" să fie setată de acum?</p>
+
+          <input type="radio" name="Da" style="margin-left: 20px;"> <p style="display: inline-block; font-family: 'Poppins', sans-serif;">Da</p>
+          <input type="radio" name="Nu" style="margin-left: 20px;"> <p style="display: inline-block; font-family: 'Poppins', sans-serif;">Nu</p>
+          <button id="next-button-to-continue">Continuă</button>
+        </div>
+        </div>
+       
+
+
+
+
+
+
+    </div>
+    <div class="next-button-box-page-3">
+        <button class="next-button-page-3" id="next-button-page-3">
+            Check <img src="images-primary/right-arrow.svg" style="display: inline-block; width: 10px;">
+        </button>
+    </div>
+</div>
+
+<div class="page-4" id="page-4">
+    <h1 class="big-text-p-4">Se instalează AirTramsFind</h1>  
+    <p>Deoarece toate lucrurile simple sunt gata, acum vă instalăm AirTramsFind Professional 1.0. Vă rugăm să vă relaxați. Va dura aproximativ 1 minut.</p>
+
+    <div class="grey-box-p-4" style="height: 35px; width: 200px; background-color: #fff; border-radius: 5px; margin-left: 20px; position: absolute; bottom: 20px;">
+        <div id="myBar-p-4" style="height:35px; width:12%; background: green; border-radius: 5px;"></div>
+      </div>
+</div>
+<div class="page-5" id="page-5">
+    <h1 class="big-text-p-5">O mică întrebare...</h1>  
+    <p>în timpul acesta continuăm să instalăm componente...</p>
+
+    <div class="questionbox-page-5">
+        <h3>Dorești un ceas analog sau digital pe home screen?</h3>
+        <p>În viitor, poți să modifici setările în Settings > Clock</p>
+        <label for="analog">
+       <input type='radio' name="analog">  <p style="display: inline-block; font-family: 'Poppins', sans-serif;">Ceas analog</p>
+    </label>
+    <label for="digital" style="display: block;">
+       <input type='radio' name="digital">  <p style="display: inline-block; font-family: 'Poppins', sans-serif;">Ceas digital</p>
+       </label>
+       <label for="none" style="display: block;">
+       <input type='radio' name="none">  <p style="display: inline-block; font-family: 'Poppins', sans-serif;">Fără</p>
+    </label>
+    </div>
+
+    <div class="grey-box-p-5" style="height: 35px; width: 200px; background-color: #fff; border-radius: 5px; margin-left: 20px; position: absolute; bottom: 20px;">
+        <div id="myBar-p-5" style="height:35px; width:59%; background: green; border-radius: 5px;"></div>
+      </div>
+      <div class="next-button-box-page-5">
+        <button class="next-button" id="next-button-page-5">
+            Start <img src="images-primary/right-arrow.svg" style="display: inline-block; width: 10px;">
+        </button>
+    </div>
+
+</div>
+
+<div class="page-6" id="page-6">
+    <h1 class="big-text-p-6">Iți mulțumim</h1>  
+
+    <div class="questionbox-page-5">
+        <h3>Ultimul lucru: ce culoare preferi mai mult?</h3>
+        <p>În viitor, poți să modifici setările în Settings > Color Theme</p>
+        <img src="images-primary/blue-theme-option.png">
+        <img src="images-primary/green-theme-option.png" style="margin-left: 20px;">
+    </div>
+
+    <div class="grey-box-p-6" style="height: 35px; width: 200px; background-color: #fff; border-radius: 5px; margin-left: 20px; position: absolute; bottom: 20px;">
+        <div id="myBar-p-6" style="height:35px; width:100%; background: green; border-radius: 5px;"></div>
+      </div>
+
+      <div class="next-button-box-page-6">
+        <button class="next-button" id="next-button-page-6">
+            Start <img src="images-primary/right-arrow.svg" style="display: inline-block; width: 10px;">
+        </button>
+    </div>
+
+</div>
+
+<script src="setup.js"></script>
+</body>
+</html>

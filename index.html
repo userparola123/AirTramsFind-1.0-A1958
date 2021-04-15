@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-auth.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="checkbox.css">
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel="stylesheet" />
+<link
+rel="stylesheet"
+href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+type="text/css"
+/>
+  <link rel="stylesheet" href="setup.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="ghostGame.css">
+  <link rel="stylesheet" href="airBomb.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="maze.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="dog.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="calculator.css">
+  <link rel="stylesheet" href="numberGuessGame.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enciclopedie</title>
+</head>
+<body>
+
+  <div id="main_container">
+<div id="AIRTRAMSFIND">
+  <br><br><br>
+
+
+
+<!--Ghost Game Copyright 2020 - 2021 AirTramsFind 0.5 Alpha 2 / 3 Release with help of CODEPEN-->
+
+<div id="ghostGame">
+
+  <div id="mydiv5">
+      
+    <div id="mydivheader"><i class="fa fa-times" aria-hidden="true"  onclick="closeWindowSnakeGame()" id="closeIcon"></i></div>
+
+<form><input class="menu" type="checkbox" />
+  <div class="title-screen">
+      <div class="title-screen__content"><svg class="ghost__image-body title-ghost" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+              <g id="layer1" transform="translate(0,-922.36216)">
+                  <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                  <circle class="ghost__eyes" id="path4152" r="4.9010091" cy="957.77557" cx="41.527569" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                  <circle class="ghost__eyes" id="circle4156" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="64.691391" cy="955.00385" r="8.6626558"></circle>
+                  <path class="ghost__mouth" id="path4158" d="m 74.836967,972.6979 c -3e-6,11.63211 -14.670414,22.44764 -25.440609,22.44764 -10.770196,0 -19.303184,-0.71848 -19.303187,-12.35059 3e-6,-11.63211 8.852855,-13.5886 19.62305,-13.5886 10.770195,0 25.120743,-8.14052 25.120746,3.49155 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                  <g class="ghost__eyes ghost__eyes--busted" id="g4167" transform="matrix(1.5105663,0,0,1.5105663,35.905034,-496.71423)">
+                      <rect id="rect4162" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                      <rect id="rect4165" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                  </g>
+                  <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(22.470903,-3.2666991)">
+                      <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                      <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                  </g>
+              </g>
+          </svg>
+          <h1 class="title">Ghost <br /> Bustin'</h1>
+          <p class="description">You'll get 15 seconds to bust as many ghosts as you can.
+              Colored ghosts score more points!</p><button class="btnGhostStart" type="button">Start</button>
+      </div>
+  </div>
+  <div class="backdrop"></div>
+  <div class="game" style="--rows: 3; --cols: 3">
+      <div class="ghost-pen">
+          <div class="ghost__container" style="--speed: 3.3545005694663725; --delay: 4; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+              <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                      <g id="layer1" transform="translate(0,-922.36216)">
+                          <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                          <circle class="ghost__eyes" id="path4152" r="4.9010091" cy="957.77557" cx="41.527569" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                          <circle class="ghost__eyes" id="circle4156" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="64.691391" cy="955.00385" r="8.6626558"></circle>
+                          <path class="ghost__mouth" id="path4158" d="m 74.836967,972.6979 c -3e-6,11.63211 -14.670414,22.44764 -25.440609,22.44764 -10.770196,0 -19.303184,-0.71848 -19.303187,-12.35059 3e-6,-11.63211 8.852855,-13.5886 19.62305,-13.5886 10.770195,0 25.120743,-8.14052 25.120746,3.49155 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                          <g class="ghost__eyes ghost__eyes--busted" id="g4167" transform="matrix(1.5105663,0,0,1.5105663,35.905034,-496.71423)">
+                              <rect id="rect4162" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                              <rect id="rect4165" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                          </g>
+                          <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(22.470903,-3.2666991)">
+                              <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                              <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                          </g>
+                      </g>
+                  </svg></div>
+              <div class="ghost__container" style="--speed: 1.0822715808671863; --delay: 5; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+                  <div class="ghost__image"><svg class="ghost__image-body" preserveAspectRatio="xMinYMin" viewBox="0 0 100 130">
+                          <g id="layer1" transform="translate(0,-922.36216)">
+                              <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                              <circle class="ghost__eyes" id="path4152" r="5" cy="961.0423" cx="19.056681" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                              <circle class="ghost__eyes" id="circle4156" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="76.471283" cy="960.05237" r="5"></circle>
+                              <path id="path4158" d="m 79.58852,970.29888 c -5e-6,2.4602 -14.18229,4.45458 -31.677023,4.45458 -17.494733,0 -31.677018,-1.99438 -31.677023,-4.45458 5e-6,-2.4602 14.380271,0.099 31.875004,0.099 17.494733,0 31.479037,-2.55919 31.479042,-0.099 z" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                              <g class="ghost__eyes ghost__eyes--busted" id="g4167">
+                                  <rect id="rect4162" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                                  <rect id="rect4165" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                              </g>
+                              <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(57.414617,-0.98990468)">
+                                  <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                  <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                              </g>
+                          </g>
+                      </svg></div>
+                  <div class="ghost__container" style="--speed: 3.111408572459905; --delay: 4; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+                      <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                              <g id="layer1" transform="translate(0,-922.36216)">
+                                  <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                                  <circle class="ghost__eyes" id="path4152" r="4.9010091" cy="957.77557" cx="41.527569" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                                  <circle class="ghost__eyes" id="circle4156" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="64.691391" cy="955.00385" r="8.6626558"></circle>
+                                  <path class="ghost__mouth" id="path4158" d="m 74.836967,972.6979 c -3e-6,11.63211 -14.670414,22.44764 -25.440609,22.44764 -10.770196,0 -19.303184,-0.71848 -19.303187,-12.35059 3e-6,-11.63211 8.852855,-13.5886 19.62305,-13.5886 10.770195,0 25.120743,-8.14052 25.120746,3.49155 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                                  <g class="ghost__eyes ghost__eyes--busted" id="g4167" transform="matrix(1.5105663,0,0,1.5105663,35.905034,-496.71423)">
+                                      <rect id="rect4162" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                                      <rect id="rect4165" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                  </g>
+                                  <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(22.470903,-3.2666991)">
+                                      <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                      <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                                  </g>
+                              </g>
+                          </svg></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="ghost-pen">
+          <div class="ghost__container" style="--speed: 1.103310682285394; --delay: 4; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+              <div class="ghost__image"><svg class="ghost__image-body" preserveAspectRatio="xMinYMin" viewBox="0 0 100 130">
+                      <g id="layer1" transform="translate(0,-922.36216)">
+                          <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                          <circle class="ghost__eyes" id="path4152" r="5" cy="961.0423" cx="19.056681" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                          <circle class="ghost__eyes" id="circle4156" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="76.471283" cy="960.05237" r="5"></circle>
+                          <path id="path4158" d="m 79.58852,970.29888 c -5e-6,2.4602 -14.18229,4.45458 -31.677023,4.45458 -17.494733,0 -31.677018,-1.99438 -31.677023,-4.45458 5e-6,-2.4602 14.380271,0.099 31.875004,0.099 17.494733,0 31.479037,-2.55919 31.479042,-0.099 z" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                          <g class="ghost__eyes ghost__eyes--busted" id="g4167">
+                              <rect id="rect4162" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                              <rect id="rect4165" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                          </g>
+                          <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(57.414617,-0.98990468)">
+                              <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                              <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                          </g>
+                      </g>
+                  </svg></div>
+              <div class="ghost__container" style="--speed: 1.2891137149227938; --delay: 3; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+                  <div class="ghost__image"><svg class="ghost__image-body" preserveAspectRatio="xMinYMin" viewBox="0 0 100 130">
+                          <g id="layer1" transform="translate(0,-922.36216)">
+                              <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                              <circle class="ghost__eyes" id="path4152" r="5" cy="961.0423" cx="19.056681" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                              <circle class="ghost__eyes" id="circle4156" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="76.471283" cy="960.05237" r="5"></circle>
+                              <path id="path4158" d="m 79.58852,970.29888 c -5e-6,2.4602 -14.18229,4.45458 -31.677023,4.45458 -17.494733,0 -31.677018,-1.99438 -31.677023,-4.45458 5e-6,-2.4602 14.380271,0.099 31.875004,0.099 17.494733,0 31.479037,-2.55919 31.479042,-0.099 z" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                              <g class="ghost__eyes ghost__eyes--busted" id="g4167">
+                                  <rect id="rect4162" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                                  <rect id="rect4165" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                              </g>
+                              <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(57.414617,-0.98990468)">
+                                  <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                  <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                              </g>
+                          </g>
+                      </svg></div>
+                  <div class="ghost__container" style="--speed: 2.223432975142047; --delay: 1; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+                      <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                              <g id="layer1" transform="translate(0,-922.36216)">
+                                  <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                                  <circle class="ghost__eyes" id="path4152" r="4.9010091" cy="957.77557" cx="41.527569" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                                  <circle class="ghost__eyes" id="circle4156" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="64.691391" cy="955.00385" r="8.6626558"></circle>
+                                  <path class="ghost__mouth" id="path4158" d="m 74.836967,972.6979 c -3e-6,11.63211 -14.670414,22.44764 -25.440609,22.44764 -10.770196,0 -19.303184,-0.71848 -19.303187,-12.35059 3e-6,-11.63211 8.852855,-13.5886 19.62305,-13.5886 10.770195,0 25.120743,-8.14052 25.120746,3.49155 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                                  <g class="ghost__eyes ghost__eyes--busted" id="g4167" transform="matrix(1.5105663,0,0,1.5105663,35.905034,-496.71423)">
+                                      <rect id="rect4162" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                                      <rect id="rect4165" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                  </g>
+                                  <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(22.470903,-3.2666991)">
+                                      <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                      <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                                  </g>
+                              </g>
+                          </svg></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="ghost-pen">
+          <div class="ghost__container" style="--speed: 2.2719605658522264; --delay: 2; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+              <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                      <g id="layer1" transform="translate(0,-922.36216)">
+                          <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                          <path id="path4158" d="m 64.541935,968.77294 c -10e-7,1.76535 -11.355147,5.78254 -17.039796,5.78254 -5.684647,0 -16.023096,-4.26665 -16.023098,-6.03199 2e-6,-1.76535 11.896477,3.67918 17.581124,3.67918 5.684648,0 15.481769,-5.19507 15.48177,-3.42973 z" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                          <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(18.907238,-4.0586249)">
+                              <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                              <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                          </g>
+                          <g class="ghost__eyes ghost__eyes--busted" id="g4215" transform="translate(38.309414,-3.8606434)">
+                              <rect id="rect4217" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                              <rect id="rect4219" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                          </g>
+                          <path class="ghost__eyes" id="circle4221" d="m 62.069108,959.55738 c 0,2.70675 -2.194256,-3.01825 -4.901009,-3.01825 -2.706753,0 -4.901009,5.725 -4.901009,3.01825 0,-2.70675 2.194256,-4.90101 4.901009,-4.90101 2.706753,0 4.901009,2.19426 4.901009,4.90101 z" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                          <path class="ghost__eyes" id="path4224" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 42.666932,959.55738 c 0,2.70675 -2.194256,-3.01825 -4.901009,-3.01825 -2.706753,0 -4.901009,5.725 -4.901009,3.01825 0,-2.70675 2.194256,-4.90101 4.901009,-4.90101 2.706753,0 4.901009,2.19426 4.901009,4.90101 z"></path>
+                      </g>
+                  </svg></div>
+              <div class="ghost__container" style="--speed: 1.4463559098042333; --delay: 5; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+                  <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                          <g id="layer1" transform="translate(0,-922.36216)">
+                              <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                              <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="matrix(1.6637807,0,0,1.6637807,28.456943,-641.01528)">
+                                  <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                  <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                              </g>
+                              <circle class="ghost__eyes" id="path4245" r="7.5" cy="958.1463" cx="38.385101" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                              <g class="ghost__eyes ghost__eyes--busted" id="g4247" transform="matrix(1.6637807,0,0,1.6637807,6.6789885,-640.81728)">
+                                  <rect id="rect4249" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                                  <rect id="rect4251" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                              </g>
+                              <circle class="ghost__eyes" id="circle4253" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="60.163055" cy="957.9483" r="7.5"></circle>
+                          </g>
+                      </svg></div>
+                  <div class="ghost__container" style="--speed: 2.0408372245523294; --delay: 5; --color: #c5a3ff; --score: 5"><input class="ghost" type="checkbox" />
+                      <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                              <g id="layer1" transform="translate(0,-922.36216)">
+                                  <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                                  <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="matrix(1.6637807,0,0,1.6637807,28.456943,-641.01528)">
+                                      <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                      <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                                  </g>
+                                  <circle class="ghost__eyes" id="path4245" r="7.5" cy="958.1463" cx="38.385101" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                                  <g class="ghost__eyes ghost__eyes--busted" id="g4247" transform="matrix(1.6637807,0,0,1.6637807,6.6789885,-640.81728)">
+                                      <rect id="rect4249" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                                      <rect id="rect4251" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                  </g>
+                                  <circle class="ghost__eyes" id="circle4253" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="60.163055" cy="957.9483" r="7.5"></circle>
+                              </g>
+                          </svg></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="ghost-pen">
+          <div class="ghost__container" style="--speed: 1.8923548479676429; --delay: 2; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+              <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                      <g id="layer1" transform="translate(0,-922.36216)">
+                          <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                          <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="matrix(1.6637807,0,0,1.6637807,28.456943,-641.01528)">
+                              <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                              <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                          </g>
+                          <circle class="ghost__eyes" id="path4245" r="7.5" cy="958.1463" cx="38.385101" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                          <g class="ghost__eyes ghost__eyes--busted" id="g4247" transform="matrix(1.6637807,0,0,1.6637807,6.6789885,-640.81728)">
+                              <rect id="rect4249" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                              <rect id="rect4251" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                          </g>
+                          <circle class="ghost__eyes" id="circle4253" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="60.163055" cy="957.9483" r="7.5"></circle>
+                      </g>
+                  </svg></div>
+              <div class="ghost__container" style="--speed: 1.287207175585082; --delay: 2; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+                  <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                          <g id="layer1" transform="translate(0,-922.36216)">
+                              <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                              <path id="path4158" d="m 64.541935,968.77294 c -10e-7,1.76535 -11.355147,5.78254 -17.039796,5.78254 -5.684647,0 -16.023096,-4.26665 -16.023098,-6.03199 2e-6,-1.76535 11.896477,3.67918 17.581124,3.67918 5.684648,0 15.481769,-5.19507 15.48177,-3.42973 z" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                              <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(18.907238,-4.0586249)">
+                                  <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                  <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                              </g>
+                              <g class="ghost__eyes ghost__eyes--busted" id="g4215" transform="translate(38.309414,-3.8606434)">
+                                  <rect id="rect4217" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                                  <rect id="rect4219" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                              </g>
+                              <path class="ghost__eyes" id="circle4221" d="m 62.069108,959.55738 c 0,2.70675 -2.194256,-3.01825 -4.901009,-3.01825 -2.706753,0 -4.901009,5.725 -4.901009,3.01825 0,-2.70675 2.194256,-4.90101 4.901009,-4.90101 2.706753,0 4.901009,2.19426 4.901009,4.90101 z" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                              <path class="ghost__eyes" id="path4224" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 42.666932,959.55738 c 0,2.70675 -2.194256,-3.01825 -4.901009,-3.01825 -2.706753,0 -4.901009,5.725 -4.901009,3.01825 0,-2.70675 2.194256,-4.90101 4.901009,-4.90101 2.706753,0 4.901009,2.19426 4.901009,4.90101 z"></path>
+                          </g>
+                      </svg></div>
+                  <div class="ghost__container" style="--speed: 2.1530754785907193; --delay: 1; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+                      <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                              <g id="layer1" transform="translate(0,-922.36216)">
+                                  <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                                  <circle class="ghost__eyes" id="path4152" r="4.9010091" cy="957.77557" cx="41.527569" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                                  <circle class="ghost__eyes" id="circle4156" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="64.691391" cy="955.00385" r="8.6626558"></circle>
+                                  <path class="ghost__mouth" id="path4158" d="m 74.836967,972.6979 c -3e-6,11.63211 -14.670414,22.44764 -25.440609,22.44764 -10.770196,0 -19.303184,-0.71848 -19.303187,-12.35059 3e-6,-11.63211 8.852855,-13.5886 19.62305,-13.5886 10.770195,0 25.120743,-8.14052 25.120746,3.49155 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                                  <g class="ghost__eyes ghost__eyes--busted" id="g4167" transform="matrix(1.5105663,0,0,1.5105663,35.905034,-496.71423)">
+                                      <rect id="rect4162" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                                      <rect id="rect4165" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                  </g>
+                                  <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(22.470903,-3.2666991)">
+                                      <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                      <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                                  </g>
+                              </g>
+                          </svg></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="ghost-pen">
+          <div class="ghost__container" style="--speed: 0.864082711133523; --delay: 2; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+              <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                      <g id="layer1" transform="translate(0,-922.36216)">
+                          <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                          <circle class="ghost__eyes" id="path4152" r="4.9010091" cy="957.77557" cx="41.527569" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                          <circle class="ghost__eyes" id="circle4156" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="64.691391" cy="955.00385" r="8.6626558"></circle>
+                          <path class="ghost__mouth" id="path4158" d="m 74.836967,972.6979 c -3e-6,11.63211 -14.670414,22.44764 -25.440609,22.44764 -10.770196,0 -19.303184,-0.71848 -19.303187,-12.35059 3e-6,-11.63211 8.852855,-13.5886 19.62305,-13.5886 10.770195,0 25.120743,-8.14052 25.120746,3.49155 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                          <g class="ghost__eyes ghost__eyes--busted" id="g4167" transform="matrix(1.5105663,0,0,1.5105663,35.905034,-496.71423)">
+                              <rect id="rect4162" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                              <rect id="rect4165" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                          </g>
+                          <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(22.470903,-3.2666991)">
+                              <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                              <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                          </g>
+                      </g>
+                  </svg></div>
+              <div class="ghost__container" style="--speed: 0.9570295258720412; --delay: 2; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+                  <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                          <g id="layer1" transform="translate(0,-922.36216)">
+                              <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                              <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="matrix(1.6637807,0,0,1.6637807,28.456943,-641.01528)">
+                                  <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                  <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                              </g>
+                              <circle class="ghost__eyes" id="path4245" r="7.5" cy="958.1463" cx="38.385101" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                              <g class="ghost__eyes ghost__eyes--busted" id="g4247" transform="matrix(1.6637807,0,0,1.6637807,6.6789885,-640.81728)">
+                                  <rect id="rect4249" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                                  <rect id="rect4251" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                              </g>
+                              <circle class="ghost__eyes" id="circle4253" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="60.163055" cy="957.9483" r="7.5"></circle>
+                          </g>
+                      </svg></div>
+                  <div class="ghost__container" style="--speed: 1.9186945476694175; --delay: 4; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+                      <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                              <g id="layer1" transform="translate(0,-922.36216)">
+                                  <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                                  <circle class="ghost__eyes" id="path4152" r="4.9010091" cy="957.77557" cx="41.527569" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                                  <circle class="ghost__eyes" id="circle4156" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="64.691391" cy="955.00385" r="8.6626558"></circle>
+                                  <path class="ghost__mouth" id="path4158" d="m 74.836967,972.6979 c -3e-6,11.63211 -14.670414,22.44764 -25.440609,22.44764 -10.770196,0 -19.303184,-0.71848 -19.303187,-12.35059 3e-6,-11.63211 8.852855,-13.5886 19.62305,-13.5886 10.770195,0 25.120743,-8.14052 25.120746,3.49155 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                                  <g class="ghost__eyes ghost__eyes--busted" id="g4167" transform="matrix(1.5105663,0,0,1.5105663,35.905034,-496.71423)">
+                                      <rect id="rect4162" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                                      <rect id="rect4165" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                  </g>
+                                  <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(22.470903,-3.2666991)">
+                                      <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                      <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                                  </g>
+                              </g>
+                          </svg></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="ghost-pen">
+          <div class="ghost__container" style="--speed: 1.765737235251522; --delay: 5; --color: #c5a3ff; --score: 5"><input class="ghost" type="checkbox" />
+              <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                      <g id="layer1" transform="translate(0,-922.36216)">
+                          <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                          <path id="path4158" d="m 64.541935,968.77294 c -10e-7,1.76535 -11.355147,5.78254 -17.039796,5.78254 -5.684647,0 -16.023096,-4.26665 -16.023098,-6.03199 2e-6,-1.76535 11.896477,3.67918 17.581124,3.67918 5.684648,0 15.481769,-5.19507 15.48177,-3.42973 z" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                          <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(18.907238,-4.0586249)">
+                              <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                              <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                          </g>
+                          <g class="ghost__eyes ghost__eyes--busted" id="g4215" transform="translate(38.309414,-3.8606434)">
+                              <rect id="rect4217" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                              <rect id="rect4219" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                          </g>
+                          <path class="ghost__eyes" id="circle4221" d="m 62.069108,959.55738 c 0,2.70675 -2.194256,-3.01825 -4.901009,-3.01825 -2.706753,0 -4.901009,5.725 -4.901009,3.01825 0,-2.70675 2.194256,-4.90101 4.901009,-4.90101 2.706753,0 4.901009,2.19426 4.901009,4.90101 z" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                          <path class="ghost__eyes" id="path4224" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 42.666932,959.55738 c 0,2.70675 -2.194256,-3.01825 -4.901009,-3.01825 -2.706753,0 -4.901009,5.725 -4.901009,3.01825 0,-2.70675 2.194256,-4.90101 4.901009,-4.90101 2.706753,0 4.901009,2.19426 4.901009,4.90101 z"></path>
+                      </g>
+                  </svg></div>
+              <div class="ghost__container" style="--speed: 2.0036397471725493; --delay: 3; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+                  <div class="ghost__image"><svg class="ghost__image-body" preserveAspectRatio="xMinYMin" viewBox="0 0 100 130">
+                          <g id="layer1" transform="translate(0,-922.36216)">
+                              <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                              <circle class="ghost__eyes" id="path4152" r="5" cy="961.0423" cx="19.056681" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                              <circle class="ghost__eyes" id="circle4156" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="76.471283" cy="960.05237" r="5"></circle>
+                              <path id="path4158" d="m 79.58852,970.29888 c -5e-6,2.4602 -14.18229,4.45458 -31.677023,4.45458 -17.494733,0 -31.677018,-1.99438 -31.677023,-4.45458 5e-6,-2.4602 14.380271,0.099 31.875004,0.099 17.494733,0 31.479037,-2.55919 31.479042,-0.099 z" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                              <g class="ghost__eyes ghost__eyes--busted" id="g4167">
+                                  <rect id="rect4162" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                                  <rect id="rect4165" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                              </g>
+                              <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(57.414617,-0.98990468)">
+                                  <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                  <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                              </g>
+                          </g>
+                      </svg></div>
+                  <div class="ghost__container" style="--speed: 1.6669594899203606; --delay: 3; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+                      <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                              <g id="layer1" transform="translate(0,-922.36216)">
+                                  <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                                  <circle class="ghost__eyes" id="path4152" r="4.9010091" cy="957.77557" cx="41.527569" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                                  <circle class="ghost__eyes" id="circle4156" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="64.691391" cy="955.00385" r="8.6626558"></circle>
+                                  <path class="ghost__mouth" id="path4158" d="m 74.836967,972.6979 c -3e-6,11.63211 -14.670414,22.44764 -25.440609,22.44764 -10.770196,0 -19.303184,-0.71848 -19.303187,-12.35059 3e-6,-11.63211 8.852855,-13.5886 19.62305,-13.5886 10.770195,0 25.120743,-8.14052 25.120746,3.49155 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                                  <g class="ghost__eyes ghost__eyes--busted" id="g4167" transform="matrix(1.5105663,0,0,1.5105663,35.905034,-496.71423)">
+                                      <rect id="rect4162" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                                      <rect id="rect4165" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                  </g>
+                                  <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(22.470903,-3.2666991)">
+                                      <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                      <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                                  </g>
+                              </g>
+                          </svg></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="ghost-pen">
+          <div class="ghost__container" style="--speed: 3.658236790412357; --delay: 1; --color: #ace7ff; --score: 5"><input class="ghost" type="checkbox" />
+              <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                      <g id="layer1" transform="translate(0,-922.36216)">
+                          <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                          <path id="path4158" d="m 64.541935,968.77294 c -10e-7,1.76535 -11.355147,5.78254 -17.039796,5.78254 -5.684647,0 -16.023096,-4.26665 -16.023098,-6.03199 2e-6,-1.76535 11.896477,3.67918 17.581124,3.67918 5.684648,0 15.481769,-5.19507 15.48177,-3.42973 z" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                          <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(18.907238,-4.0586249)">
+                              <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                              <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                          </g>
+                          <g class="ghost__eyes ghost__eyes--busted" id="g4215" transform="translate(38.309414,-3.8606434)">
+                              <rect id="rect4217" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                              <rect id="rect4219" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                          </g>
+                          <path class="ghost__eyes" id="circle4221" d="m 62.069108,959.55738 c 0,2.70675 -2.194256,-3.01825 -4.901009,-3.01825 -2.706753,0 -4.901009,5.725 -4.901009,3.01825 0,-2.70675 2.194256,-4.90101 4.901009,-4.90101 2.706753,0 4.901009,2.19426 4.901009,4.90101 z" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                          <path class="ghost__eyes" id="path4224" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 42.666932,959.55738 c 0,2.70675 -2.194256,-3.01825 -4.901009,-3.01825 -2.706753,0 -4.901009,5.725 -4.901009,3.01825 0,-2.70675 2.194256,-4.90101 4.901009,-4.90101 2.706753,0 4.901009,2.19426 4.901009,4.90101 z"></path>
+                      </g>
+                  </svg></div>
+              <div class="ghost__container" style="--speed: 2.550041683961667; --delay: 5; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+                  <div class="ghost__image"><svg class="ghost__image-body" preserveAspectRatio="xMinYMin" viewBox="0 0 100 130">
+                          <g id="layer1" transform="translate(0,-922.36216)">
+                              <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                              <circle class="ghost__eyes" id="path4152" r="5" cy="961.0423" cx="19.056681" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                              <circle class="ghost__eyes" id="circle4156" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="76.471283" cy="960.05237" r="5"></circle>
+                              <path id="path4158" d="m 79.58852,970.29888 c -5e-6,2.4602 -14.18229,4.45458 -31.677023,4.45458 -17.494733,0 -31.677018,-1.99438 -31.677023,-4.45458 5e-6,-2.4602 14.380271,0.099 31.875004,0.099 17.494733,0 31.479037,-2.55919 31.479042,-0.099 z" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                              <g class="ghost__eyes ghost__eyes--busted" id="g4167">
+                                  <rect id="rect4162" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                                  <rect id="rect4165" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                              </g>
+                              <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(57.414617,-0.98990468)">
+                                  <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                  <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                              </g>
+                          </g>
+                      </svg></div>
+                  <div class="ghost__container" style="--speed: 2.2060640785985526; --delay: 5; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+                      <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                              <g id="layer1" transform="translate(0,-922.36216)">
+                                  <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                                  <circle class="ghost__eyes" id="path4152" r="4.9010091" cy="957.77557" cx="41.527569" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                                  <circle class="ghost__eyes" id="circle4156" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="64.691391" cy="955.00385" r="8.6626558"></circle>
+                                  <path class="ghost__mouth" id="path4158" d="m 74.836967,972.6979 c -3e-6,11.63211 -14.670414,22.44764 -25.440609,22.44764 -10.770196,0 -19.303184,-0.71848 -19.303187,-12.35059 3e-6,-11.63211 8.852855,-13.5886 19.62305,-13.5886 10.770195,0 25.120743,-8.14052 25.120746,3.49155 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                                  <g class="ghost__eyes ghost__eyes--busted" id="g4167" transform="matrix(1.5105663,0,0,1.5105663,35.905034,-496.71423)">
+                                      <rect id="rect4162" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                                      <rect id="rect4165" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                  </g>
+                                  <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(22.470903,-3.2666991)">
+                                      <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                      <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                                  </g>
+                              </g>
+                          </svg></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="ghost-pen">
+          <div class="ghost__container" style="--speed: 2.1321866010177777; --delay: 2; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+              <div class="ghost__image"><svg class="ghost__image-body" preserveAspectRatio="xMinYMin" viewBox="0 0 100 130">
+                      <g id="layer1" transform="translate(0,-922.36216)">
+                          <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                          <circle class="ghost__eyes" id="path4152" r="5" cy="961.0423" cx="19.056681" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                          <circle class="ghost__eyes" id="circle4156" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="76.471283" cy="960.05237" r="5"></circle>
+                          <path id="path4158" d="m 79.58852,970.29888 c -5e-6,2.4602 -14.18229,4.45458 -31.677023,4.45458 -17.494733,0 -31.677018,-1.99438 -31.677023,-4.45458 5e-6,-2.4602 14.380271,0.099 31.875004,0.099 17.494733,0 31.479037,-2.55919 31.479042,-0.099 z" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                          <g class="ghost__eyes ghost__eyes--busted" id="g4167">
+                              <rect id="rect4162" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                              <rect id="rect4165" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                          </g>
+                          <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(57.414617,-0.98990468)">
+                              <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                              <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                          </g>
+                      </g>
+                  </svg></div>
+              <div class="ghost__container" style="--speed: 3.4515207631029003; --delay: 2; --color: #c4fafb; --score: 5"><input class="ghost" type="checkbox" />
+                  <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                          <g id="layer1" transform="translate(0,-922.36216)">
+                              <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                              <path id="path4158" d="m 64.541935,968.77294 c -10e-7,1.76535 -11.355147,5.78254 -17.039796,5.78254 -5.684647,0 -16.023096,-4.26665 -16.023098,-6.03199 2e-6,-1.76535 11.896477,3.67918 17.581124,3.67918 5.684648,0 15.481769,-5.19507 15.48177,-3.42973 z" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                              <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(18.907238,-4.0586249)">
+                                  <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                  <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                              </g>
+                              <g class="ghost__eyes ghost__eyes--busted" id="g4215" transform="translate(38.309414,-3.8606434)">
+                                  <rect id="rect4217" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                                  <rect id="rect4219" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                              </g>
+                              <path class="ghost__eyes" id="circle4221" d="m 62.069108,959.55738 c 0,2.70675 -2.194256,-3.01825 -4.901009,-3.01825 -2.706753,0 -4.901009,5.725 -4.901009,3.01825 0,-2.70675 2.194256,-4.90101 4.901009,-4.90101 2.706753,0 4.901009,2.19426 4.901009,4.90101 z" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                              <path class="ghost__eyes" id="path4224" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 42.666932,959.55738 c 0,2.70675 -2.194256,-3.01825 -4.901009,-3.01825 -2.706753,0 -4.901009,5.725 -4.901009,3.01825 0,-2.70675 2.194256,-4.90101 4.901009,-4.90101 2.706753,0 4.901009,2.19426 4.901009,4.90101 z"></path>
+                          </g>
+                      </svg></div>
+                  <div class="ghost__container" style="--speed: 0.8329380600722087; --delay: 4; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+                      <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                              <g id="layer1" transform="translate(0,-922.36216)">
+                                  <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                                  <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="matrix(1.6637807,0,0,1.6637807,28.456943,-641.01528)">
+                                      <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                      <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                                  </g>
+                                  <circle class="ghost__eyes" id="path4245" r="7.5" cy="958.1463" cx="38.385101" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                                  <g class="ghost__eyes ghost__eyes--busted" id="g4247" transform="matrix(1.6637807,0,0,1.6637807,6.6789885,-640.81728)">
+                                      <rect id="rect4249" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                                      <rect id="rect4251" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                  </g>
+                                  <circle class="ghost__eyes" id="circle4253" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="60.163055" cy="957.9483" r="7.5"></circle>
+                              </g>
+                          </svg></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="ghost-pen">
+          <div class="ghost__container" style="--speed: 1.332027266091898; --delay: 4; --color: #ffbebc; --score: 5"><input class="ghost" type="checkbox" />
+              <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                      <g id="layer1" transform="translate(0,-922.36216)">
+                          <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                          <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="matrix(1.6637807,0,0,1.6637807,28.456943,-641.01528)">
+                              <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                              <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                          </g>
+                          <circle class="ghost__eyes" id="path4245" r="7.5" cy="958.1463" cx="38.385101" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                          <g class="ghost__eyes ghost__eyes--busted" id="g4247" transform="matrix(1.6637807,0,0,1.6637807,6.6789885,-640.81728)">
+                              <rect id="rect4249" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                              <rect id="rect4251" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                          </g>
+                          <circle class="ghost__eyes" id="circle4253" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="60.163055" cy="957.9483" r="7.5"></circle>
+                      </g>
+                  </svg></div>
+              <div class="ghost__container" style="--speed: 2.5805375945257882; --delay: 4; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+                  <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                          <g id="layer1" transform="translate(0,-922.36216)">
+                              <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                              <circle class="ghost__eyes" id="path4152" r="4.9010091" cy="957.77557" cx="41.527569" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                              <circle class="ghost__eyes" id="circle4156" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="64.691391" cy="955.00385" r="8.6626558"></circle>
+                              <path class="ghost__mouth" id="path4158" d="m 74.836967,972.6979 c -3e-6,11.63211 -14.670414,22.44764 -25.440609,22.44764 -10.770196,0 -19.303184,-0.71848 -19.303187,-12.35059 3e-6,-11.63211 8.852855,-13.5886 19.62305,-13.5886 10.770195,0 25.120743,-8.14052 25.120746,3.49155 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                              <g class="ghost__eyes ghost__eyes--busted" id="g4167" transform="matrix(1.5105663,0,0,1.5105663,35.905034,-496.71423)">
+                                  <rect id="rect4162" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                                  <rect id="rect4165" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                              </g>
+                              <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(22.470903,-3.2666991)">
+                                  <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                  <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                              </g>
+                          </g>
+                      </svg></div>
+                  <div class="ghost__container" style="--speed: 2.396013013822756; --delay: 2; --color: #fff; --score: 1"><input class="ghost" type="checkbox" />
+                      <div class="ghost__image"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+                              <g id="layer1" transform="translate(0,-922.36216)">
+                                  <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                                  <path id="path4158" d="m 64.541935,968.77294 c -10e-7,1.76535 -11.355147,5.78254 -17.039796,5.78254 -5.684647,0 -16.023096,-4.26665 -16.023098,-6.03199 2e-6,-1.76535 11.896477,3.67918 17.581124,3.67918 5.684648,0 15.481769,-5.19507 15.48177,-3.42973 z" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                                  <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(18.907238,-4.0586249)">
+                                      <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                      <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                                  </g>
+                                  <g class="ghost__eyes ghost__eyes--busted" id="g4215" transform="translate(38.309414,-3.8606434)">
+                                      <rect id="rect4217" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                                      <rect id="rect4219" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                                  </g>
+                                  <path class="ghost__eyes" id="circle4221" d="m 62.069108,959.55738 c 0,2.70675 -2.194256,-3.01825 -4.901009,-3.01825 -2.706753,0 -4.901009,5.725 -4.901009,3.01825 0,-2.70675 2.194256,-4.90101 4.901009,-4.90101 2.706753,0 4.901009,2.19426 4.901009,4.90101 z" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                                  <path class="ghost__eyes" id="path4224" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 42.666932,959.55738 c 0,2.70675 -2.194256,-3.01825 -4.901009,-3.01825 -2.706753,0 -4.901009,5.725 -4.901009,3.01825 0,-2.70675 2.194256,-4.90101 4.901009,-4.90101 2.706753,0 4.901009,2.19426 4.901009,4.90101 z"></path>
+                              </g>
+                          </svg></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="end">
+      <h1 class="title">Good job!</h1>
+      <h1 class="title score">You scored &nbsp;</h1><button type="reset">Try again?</button>
+      <div class="credit-ghost"><svg class="ghost__image-body" viewBox="0 0 100 130" preserveAspectRatio="xMinYMin">
+              <g id="layer1" transform="translate(0,-922.36216)">
+                  <path class="ghost__path" id="path4149" d="m 87.104126,985.99028 c 3e-6,18.29482 23.310064,51.08502 7.251515,64.80642 -4.508673,3.8525 -10.735588,-6.2194 -16.533188,-5.808 -4.489803,0.3185 -7.636172,5.7797 -12.112396,6.2655 -5.152434,0.559 -9.879869,-4.3961 -15.050164,-4.066 -4.493939,0.2869 -8.076853,5.0762 -12.578149,5.1722 -4.822196,0.1028 -8.903453,-4.2416 -13.677721,-4.9617 -6.489307,-0.9788 -15.1515178,5.9929 -19.6454524,0.9765 -14.2159436,-15.8688 8.0865824,-46.7737 6.6754904,-65.00824 -1.7280703,-22.33068 -1.210964,-29.61106 6.765096,-41.60022 7.976059,-11.98915 18.994883,-19.4046 31.165941,-19.4046 12.171058,0 23.189882,7.41545 31.165941,19.4046 7.97606,11.98916 6.573083,25.92871 6.573087,44.22354 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                  <circle class="ghost__eyes" id="path4152" r="4.9010091" cy="957.77557" cx="41.527569" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></circle>
+                  <circle class="ghost__eyes" id="circle4156" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" cx="64.691391" cy="955.00385" r="8.6626558"></circle>
+                  <path class="ghost__mouth" id="path4158" d="m 74.836967,972.6979 c -3e-6,11.63211 -14.670414,22.44764 -25.440609,22.44764 -10.770196,0 -19.303184,-0.71848 -19.303187,-12.35059 3e-6,-11.63211 8.852855,-13.5886 19.62305,-13.5886 10.770195,0 25.120743,-8.14052 25.120746,3.49155 z" style="fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></path>
+                  <g class="ghost__eyes ghost__eyes--busted" id="g4167" transform="matrix(1.5105663,0,0,1.5105663,35.905034,-496.71423)">
+                      <rect id="rect4162" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="692.03461" y="658.58441" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)"></rect>
+                      <rect id="rect4165" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)" y="-700.53461" x="665.08441" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                  </g>
+                  <g class="ghost__eyes ghost__eyes--busted" id="g4171" transform="translate(22.470903,-3.2666991)">
+                      <rect id="rect4173" transform="matrix(0.70710678,0.70710678,-0.70710678,0.70710678,0,0)" y="658.58441" x="692.03461" height="15" width="2" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"></rect>
+                      <rect id="rect4175" style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" width="2" height="15" x="665.08441" y="-700.53461" transform="matrix(-0.70710678,0.70710678,-0.70710678,-0.70710678,0,0)"></rect>
+                  </g>
+              </g>
+          </svg></div>
+  </div>
+</form>
+
+</div>
+</div>
+
+
+
+<!-- Snake game Copyright 2020 - 2021 AirTramsFind 0.2 Alpha 2 / 3 Release with help of Web Dev Simplified Youtube Channel-->
+
+
+  <div id="snakeGame">
+
+    <div id="mydiv1">
+        
+      <div id="mydivheader"><i class="fa fa-times" aria-hidden="true"  onclick="closeWindowSnakeGame()" id="closeIcon"></i></div>
+
+<div id="game-board"></div>
+
+     </div>
+     </div>
+     
+
+     <!-- Air Bomb game Copyright 2020 - 2021 AirTramsFind 0.4 Alpha 2 / 3 release with of CODEPEN-->
+
+     <div id="airBombGame">
+
+      <div id="mydiv2">
+          
+        <div id="mydivheader"><i class="fa fa-times" aria-hidden="true"  onclick="closeWindowAirBombGame()" id="closeIcon"></i></div>
+
+     <div class="wrapper">
+
+      <div class="intro">
+        <h1>"Air bomb"</h1>
+        <div class="instructions">
+          <div>As soon as this message disappears, you'll see airplanes flying above the ground</div>
+          <div>Your mission is to bomb them by clicking on them</div>
+          <div>Pay attention, the game is on time and you have only 15 seconds to shoot all the airplanes</div>
+          <div>The score is change between the airplanes</div>
+          <div>Enjoy</div>
+        </div>
+    
+        <div class="intro--timer">
+          <div class="red"></div>
+          <div class="yellow"></div>
+          <div class="green"></div>
+        </div>
+      </div>
+      
+      <div class="stage"></div>
+    
+      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-2"></div>
+      <div class="cloud cloud-3"></div>
+      <div class="cloud cloud-4"></div>
+      <div class="cloud cloud-5"></div>
+      <div class="cloud cloud-6"></div>
+      <div class="cloud cloud-7"></div>
+      <div class="cloud cloud-8"></div>
+      <div class="cloud cloud-9"></div>
+      <div class="cloud cloud-10"></div>
+    
+      <!-- Airplanes -->
+      <input class="airplane_1" type="radio" id="airplane_1" />
+      <input class="airplane_2" type="radio" id="airplane_2"  />
+      <input class="airplane_3" type="radio" id="airplane_3"  />
+      <input class="airplane_4" type="radio" id="airplane_4"  />
+      <input class="airplane_5" type="radio" id="airplane_5"  />
+      <input class="airplane_6" type="radio" id="airplane_6"  />
+      <input class="airplane_7" type="radio" id="airplane_7"  />
+      <input class="airplane_8" type="radio" id="airplane_8"  />
+      <input class="airplane_9" type="radio" id="airplane_9"  />
+      <input class="airplane_10" type="radio" id="airplane_10"  />
+      <input class="airplane_11" type="radio" id="airplane_11"  />
+      <input class="airplane_12" type="radio" id="airplane_12"  />
+      <input class="airplane_13" type="radio" id="airplane_13"  />
+    
+    
+      <label class="airplane airplane-1" for="airplane_1"></label>
+      <label class="airplane airplane-2" for="airplane_2"></label>
+      <label class="airplane airplane-3" for="airplane_3"></label>
+      <label class="airplane airplane-4" for="airplane_4"></label>
+      <label class="airplane airplane-5" for="airplane_5"></label>
+      <label class="airplane airplane-6" for="airplane_6"></label>
+      <label class="airplane airplane-7" for="airplane_7"></label>
+      <label class="airplane airplane-8" for="airplane_8"></label>
+      <label class="airplane airplane-9" for="airplane_9"></label>
+      <label class="airplane airplane-10" for="airplane_10"></label>
+      <label class="airplane airplane-11" for="airplane_11"></label>
+      <label class="airplane airplane-12" for="airplane_12"></label>
+      <label class="airplane airplane-13" for="airplane_13"></label>
+    
+    
+      <div class="timer"><span></span></div>
+    
+      <div class="gameover">The game is over, you can&nbsp;<a href="">try again</a></div>
+    
+      <div class="score">Your score is: <span class="score--current"></span></div>
+    
+
+    </div>
+
+    </div>
+    </div>
+    
+
+  <!--Maze game Copyright 2020 - 2021 AirTramsFind 0.2 Alpha 2 / 3 release with help of CODEPEN-->
+
+  <div id="mazeGame">
+
+    <div id="mydiv">
+        
+      <div id="mydivheader"><i class="fa fa-times" aria-hidden="true"  onclick="closeWindowMazeGame()" id="closeIcon"></i></div>
+      <section class="wrapper" oncontextmenu="return false" id="wrapperMovingContainer">
+
+        <section class="mobile">
+          <span class="line title">The maze</span>
+          <span class="line">I'm very sorry but this game is for non-touch screen only</span>
+        </section>
+      
+        
+      
+        <section class="game">
+          <input type="checkbox" class="step" id="maze--1"/>
+          <section class="maze maze--1">
+            
+            <section class="path path--1"></section>
+      
+            <section class="path path--finish"></section>
+      
+            <section class="path path--end"></section>
+      
+            <section class="finish">
+              <span class="line">Good job</span>
+              <span class="line">Le'ts see you on the <label for="maze--1">next level</label></span>
+            </section>
+      
+            <section class="gameover">
+              <span class="line">To finish this game, the mouse cursor should stay on the path</span>
+              <span class="line">You lose!</span>
+            </section>
+          </section>
+      
+          <input type="checkbox" class="step" id="maze--2"/>
+          <section class="maze maze--2">
+            
+            <section class="path path--1"></section>
+      
+            <section class="path path--2"></section>
+      
+            <section class="path path--3"></section>
+      
+            <section class="path path--4"></section>
+      
+            <section class="path path--5"></section>
+      
+            <section class="path path--finish"></section>
+      
+            <section class="path path--end"></section>
+      
+            <section class="finish">
+              <span class="line">Good job</span>
+              <span class="line">Le'ts see you on the <label for="maze--2">next level</label></span>
+            </section>
+      
+            <section class="gameover">
+              <span class="line">To finish this game, the mouse cursor should stay on the path</span>
+              <span class="line">You lose!</span>
+            </section>
+          </section>
+      
+          <input type="checkbox" class="step" id="maze--3"/>
+          <section class="maze maze--3">
+            
+            <section class="path path--1"></section>
+      
+            <section class="path path--2"></section>
+      
+            <section class="path path--3"></section>
+      
+            <section class="path path--4"></section>
+      
+            <section class="path path--5"></section>
+      
+            <section class="path path--6"></section>
+      
+            <section class="path path--7"></section>
+      
+            <section class="path path--finish"></section>
+      
+            <section class="path path--end"></section>
+      
+            <section class="finish">
+              <span class="line">Good job</span>
+              <span class="line">Le'ts see you on the <label for="maze--3">next level</label></span>
+            </section>
+      
+            <section class="gameover">
+              <span class="line">To finish this game, the mouse cursor should stay on the path</span>
+              <span class="line">You lose!</span>
+            </section>
+          </section>
+      
+          <input type="checkbox" class="step" id="maze--4"/>
+          <section class="maze maze--4">
+            
+            <section class="path path--1"></section>
+      
+            <section class="path path--2"></section>
+      
+            <section class="path path--3"></section>
+      
+            <section class="path path--4"></section>
+      
+            <section class="path path--5"></section>
+      
+            <section class="path path--finish"></section>
+      
+            <section class="path path--end"></section>
+      
+            <section class="finish">
+              <span class="line">Good job</span>
+              <span class="line">Le'ts see you on the <label for="maze--4">next level</label></span>
+            </section>
+      
+            <section class="gameover">
+              <span class="line">To finish this game, the mouse cursor should stay on the path</span>
+              <span class="line">You lose!</span>
+            </section>
+          </section>
+      
+          <input type="checkbox" class="step" id="maze--5"/>
+          <section class="maze maze--5">
+            
+            <section class="path path--1"></section>
+      
+            <section class="path path--2"></section>
+      
+            <section class="path path--3"></section>
+      
+            <section class="path path--4"></section>
+      
+            <section class="path path--5"></section>
+      
+            <section class="path path--finish"></section>
+      
+            <section class="finish">
+              <span class="line">Good job</span>
+              <span class="line">You made it till the end</span>
+             </section>
+      
+            <section class="gameover">
+              <span class="line">To finish this game, the mouse cursor should stay on the path</span>
+              <span class="line">You lose!</span>
+            </section>
+          </section>
+        </section>
+      
+        
+      </section>
+    </div>
+    
+    </div>
+
+
+                                        <!--NUMBER GUESS GAME-->
+
+     <div class="containerGuessGame" id="containerGuessGame">
+
+      <div id="mydiv6">
+                                              
+        <div id="mydivheader"><i class="fa fa-times" aria-hidden="true"  onclick="closeWindowGuessGame()" id="closeIcon"></i></div>
+        <button onclick="mainApp.logout();">logout</button>
+      <h3>I am thinking of a number between 1-100.</h3>
+      <h3>Can you guess it?</h3>
+      <div id="inputContainer">
+
+      <input type="text" placeholder="Num" id="guess" onclick="this.select()">
+    </div><br>
+    <div id="buttonContainer">
+        <button onclick="play()" id="my_btn">GUESS</button>
+      </div>
+      <p id="message1">No. Of Guesses: 0</p>
+      <p id="message2">Gessed Numbers are: None</p>
+                              <p id="message3"></p>
+                              <div class="refreshButtonNumberGuessGame" id="refreshButtonNumberGuessGame"><img src="SVG/refresh.svg" title="Refresh" style="width: 30px; margin-right: 10px; cursor: pointer; pointer-events: all;"></div>
+                              </div>
+                            
+                       </div>
+                         
+
+
+                                        <!--CALCULATOR CONTAINER-->
+
+     <div id="calculatorWindow">
+
+     <div id="mydiv3">
+                                              
+      <div id="mydivheader"><i class="fa fa-times" aria-hidden="true"  onclick="closeWindowCalculator()" id="closeIcon"></i></div>
+                                        
+
+        <div class="containerCalculator">
+            <form class="calculator" name="calc">
+                <input type="text" readonly class="value" name="txt">
+                <span class="num clear" onclick="calc.txt.value = ''">c</span>
+                <span class="num" onclick="document.calc.txt.value +='/'">/</span>
+                <span class="num" onclick="document.calc.txt.value +=''"></span>
+                <span class="num" onclick="document.calc.txt.value +='7'">7</span>
+                <span class="num" onclick="document.calc.txt.value +='8'">8</span>
+                <span class="num" onclick="document.calc.txt.value +='9'">9</span>
+                <span class="num" onclick="document.calc.txt.value +='-'">-</span>
+                <span class="num" onclick="document.calc.txt.value +='4'">4</span>
+                <span class="num" onclick="document.calc.txt.value +='5'">5</span>
+                <span class="num" onclick="document.calc.txt.value +='6'">6</span>
+                <span class="num plus" onclick="document.calc.txt.value +='+'">+</span>
+                <span class="num" onclick="document.calc.txt.value +='1'">1</span>
+                <span class="num" onclick="document.calc.txt.value +='2'">2</span>
+                <span class="num" onclick="document.calc.txt.value +='3'">3</span>
+                <span class="num" onclick="document.calc.txt.value +='0'">0</span>
+                <span class="num" onclick="document.calc.txt.value +='00'">00</span>
+                <span class="num" onclick="document.calc.txt.value +='.'">.</span>
+                <span class="num equal" onclick="document.calc.txt.value =eval(calc.txt.value)">=</span>
+            </form>
+        </div>
+     
+  </div>
+  </div>
+
+
+  
+
+    <!--Modals for articles Copyright 2020 - 2021 AirTramsFind-->
+
+
+   
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img src="images-content/windows-xp-logo.jpg" class="image-modal">
+    <div class="tagMarks"></div>
+    <h1 class="imageHeading">Windows XP are incă mai mulți utilizatori decât Windows 8, Vista și Chrome OS!</h1>
+    <p>Îndrăgitul Windows XP a avut suportul încheiat în 2014 de Microsoft, 
+      ceea ce înseamnă că a fost neglijat în cadrul companiei și nu a primit aproape nicio actualizare – cu excepția cazurilor de securitate foarte grave, cum ar fi cazul ransomware-ului WannaCry.
+       Cea mai recentă versiune a platformei care a primit încă o formă de atenție din partea companiei nu a mai vizat consumatorul mediu și a pierdut acest privilegiu în 2019. </p>
+<p>Cu toate acestea, o cotă foarte mare din piață încă insistă asupra sistemului de operare întârziat, 
+  după cum se arată în datele din august 2020 de la NetMarketShare. 
+  Conform raportului, 1,26% din computerele active din lume folosesc Windows XP – 
+  mai mult decât Ubuntu (1,08%), Windows 8 (0,57%), Windows Vista (0,12%) și chiar și cele moderne versiuni de ChromeOS (0,42%). </p>
+  <p>Windows 10 (56,42%) și Windows 7 (26,03%) rămân cele mai populare, 
+    Windows 7 ajungând și la data de expirare acum în 2020. Mac OS X 10,15 (3,49%)
+    este versiunea sistemului Apple cel mai bine poziționată în clasament. </p>
+
+
+  </div>
+
+</div>  
+
+    <!--  End-->
+  
+
+<!-- Start Menu AirTramsFind -->
+
+<div class="startMenu" id="startMenu">
+  <div class="closeButton"><i class="fa fa-times-circle" id="closeButton"></i></div>
+  <div class="imageHoverIcons"></div>
+  <div class="importantMenu">
+  </div>
+  <div class="contentNormalMenu">
+      <h5 class="computer">Computerul meu</h5>
+      <br>
+      <h5 onclick="openWindowMazeGame()" class="mazeGame">Jocul Maze</h5>
+      <br>
+      <h5 onclick="openWindowSnakeGame()" class="snakeGame">Șarpe</h5>
+      <h5 onclick="openWindowAirBombGame()" class="airBombGame">Air Bomb</h5>
+  </div>
+</div>
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Copyright AirTramsFind 0.2 Alpha 2 / 3 release ---  DOG -->
+
+<div class="container">
+  <div class="corgi" id="corgi">
+
+    <div class="head">
+      <div class="ear ear--r"></div>
+      <div class="ear ear--l"></div>
+
+      <div class="eye eye--left"></div>
+      <div class="eye eye--right"></div>
+
+      <div class="face">
+        <div class="face__white">
+          <div class=" face__orange face__orange--l"></div>
+          <div class=" face__orange face__orange--r"></div>
+        </div>
+      </div>
+
+      <div class="face__curve"></div>
+
+      <div class="mouth">
+
+        <div class="nose"></div>
+        <div class="mouth__left">
+          <div class="mouth__left--round"></div>
+          <div class="mouth__left--sharp"></div>
+        </div>
+        
+        <div class="lowerjaw">
+          <div class="lips"></div>
+          <div class="tongue test"></div>
+        </div>
+
+        <div class="snout"></div>
+      </div>
+    </div>
+    
+    <div class="neck__back"></div>
+    <div class="neck__front"></div>
+
+    <div class="body">
+      <div class="body__chest"></div>
+    </div>
+
+    <div class="foot foot__left foot__front foot__1"></div>
+    <div class="foot foot__right foot__front foot__2"></div>
+    <div class="foot foot__left foot__back foot__3"></div>
+    <div class="foot foot__right foot__back foot__4"></div>
+
+    <div class="tail test"></div>
+  </div>
+</div>
+
+<!--Search input-->
+
+
+<div class="mainInputContainer">
+  <input type="text" id="myInput" placeholder="Search..." class="mainInput">
+  <button class="inputButton" id="inputButton" onclick="detectTabsOpen(), search()"><i class="fas fa-search"></i></button>
+  
+</div>
+
+<!--Settings menu - AirTramsFind 1.0-->
+
+<div class="personalizeSettings" id="settingsModal">
+  <div class="personalizeMenu">
+    <p class="content" id="content1">Background Images</p>
+    <p class="content" id="content2">Colors</p>
+  </div>
+
+
+ 
+  
+  <div class="personalizeOptions">
+
+<div class="closeSettingsBtn">
+  <svg style="width:24px;height:24px;" viewBox="0 0 24 24">
+    <path fill="white" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+</svg>
+</div>
+
+      <!--SETTINGS START CONTENT-->
+
+      <div class="personalizeStart">
+          <h1 class="heading">Setări</h1>
+          <p class="text">Pentru a începe, apăsați un element din opțiunile din stânga.</p>
+         </div>
+
+      <!--SETTINGS BACKGROUND CONTENT-->
+
+      <div class="personalizeBackground">
+      <h1 class="heading">Imagini de fundal</h1>
+      <p class="text">Alegeți o imagine de fundal pentru a vă personaliza contul AirTramsFind.</p>
+      <div class="images">
+          <img src="frunze.jpg" id="frunze">
+          <img src="salvie.jpg" id="salvie">
+          <img src="tram-sofia-background.jpg" id="tram-sofia-background">
+          <img src="airbus-a350-background.jpg" id="airbus-a350-background">
+      </div>
+  </div>
+      
+      <!--SETTINGS COLOR CONTENT-->
+
+      <div class="personalizeColor">
+          <h1 class="heading">Culori</h1>
+          <p class="text">Alegeți o culoare favorită care va stiliza contul Dvs. AirTramsFind</p>
+          <hr style="margin: 15px;">
+          <div class="images">
+              <img src="images-primary/red-theme-option.png" id="redColorSettings">
+              <img src="images-primary/green-theme-option.png" id="greenColorSettings">
+              <img src="images-primary/blue-theme-option.png" id="blueColorSettings">
+          </div>
+          <div class="statusThemeColor">
+            <br>
+            <p style="
+            font-family: 'Poppins', sans-serif;
+            color:rgb(0, 0, 0);
+            font-size: 15px;
+            margin-left: 15px;
+            
+            "><strong>Color theme:</strong>  <span class="statusThemeColorText" id="statusThemeColorText"></span></p>
+             
+
+
+            <p style="
+             font-family: 'Poppins', sans-serif;
+             color:rgb(0, 0, 0);
+             font-size: 15px;
+             margin-left: 15px;
+             
+             "><strong> Dark Mode:</strong>  <span class="statusDarkModeText" id="statusDarkModeText"></span></p>
+          </div>
+          <hr style="margin: 15px;">
+          <div class="gradientCheckBoxSetting">
+            <div class="heading-2">
+              <p>Setări pentru fundal tip "gradient"</p>
+            </div>
+            <p class="settingsText">
+            Dezactivează fundal tip gradient 
+            </p>
+            <label class="switch">
+              <input type="checkbox" id="checkbox-design-for-focus">
+     
+              <span class="slider round"></span>
+              <span id="checkbox-text-gradient-now-on/off" class="on/off-checkbox-text" style="color: #000; position: relative; left: 50px; vertical-align: middle;"></span>
+            </label>
+          </div>
+  </div>
+</div>
+</div>
+
+<div class="sidebar" id="sidebar">
+  <div class="logo-img">
+<img src="SVG/history-menu-SVG.svg" class="logo">
+  </div>
+  <nav id="nav">
+<ul id="ul">
+
+</ul>
+  </nav>
+</div>
+
+<div class="empty" id="empty">
+
+</div>
+
+<!--  Taskbar AirTramsFind-->
+
+<section class="menu menu--circle">
+  <input type="checkbox" id="menu__active"/>
+  <label for="menu__active" class="menu__active">
+    <div class="menu__toggle">
+      <div class="icon">
+        <div class="hamburger"></div>
+      </div>
+    </div>
+    <input type="radio" name="arrow--up" id="degree--up-0"/>
+    <input type="radio" name="arrow--up" id="degree--up-1" />
+    <input type="radio" name="arrow--up" id="degree--up-2" />
+    <div class="menu__listings">
+      <ul class="circle">
+        <li>
+          <div class="placeholder">
+            <div class="upside">
+              <a href="#" class="not_in_history-1" onclick="openWindowCalculator()" id="calculatorIcon"><svg id="Capa_1" enable-background="new 0 0 512 512" height="45" viewBox="0 0 512 512" width="45" xmlns="http://www.w3.org/2000/svg"><g><path d="m441 0h-396c-24.813 0-45 20.187-45 45v396c0 24.813 20.187 45 45 45h296c3.979 0 7.794-1.581 10.606-4.394l130-130c2.814-2.813 4.394-6.628 4.394-10.606v-296c0-24.813-20.187-45-45-45z" fill="#696969"/><path d="m243 0h-198c-24.813 0-45 20.187-45 45v198h243z" fill="#696969"/><path d="m486 243v-198c0-24.813-20.187-45-45-45h-198v243z" fill="#555"/><path d="m243 243v243h98c3.979 0 7.794-1.581 10.606-4.394l130-130c2.814-2.813 4.394-6.628 4.394-10.606v-98zm228 98h.01z" fill="#414141"/><path d="m0 243v198c0 24.813 20.187 45 45 45h198v-243z" fill="#555"/><path d="m156.5 106.5h-20v-20c0-8.284-6.716-15-15-15s-15 6.716-15 15v20h-20c-8.284 0-15 6.716-15 15s6.716 15 15 15h20v20c0 8.284 6.716 15 15 15s15-6.716 15-15v-20h20c8.284 0 15-6.716 15-15s-6.716-15-15-15z" fill="#dcf5fa"/><path d="m399.5 136.5h-70c-8.284 0-15-6.716-15-15s6.716-15 15-15h70c8.284 0 15 6.716 15 15s-6.716 15-15 15z" fill="#bedce6"/><path d="m142.713 364.5 14.394-14.394c5.858-5.858 5.858-15.355 0-21.213-5.857-5.858-15.355-5.858-21.213 0l-14.394 14.394-14.394-14.394c-5.857-5.858-15.355-5.858-21.213 0s-5.858 15.355 0 21.213l14.394 14.394-14.394 14.394c-5.858 5.858-5.858 15.355 0 21.213 2.929 2.929 6.768 4.394 10.606 4.394s7.678-1.464 10.606-4.394l14.394-14.394 14.394 14.394c2.929 2.929 6.768 4.394 10.606 4.394s7.678-1.464 10.606-4.394c5.858-5.858 5.858-15.355 0-21.213z" fill="#dcf5fa"/><path d="m357 512c-85.468 0-155-69.533-155-155s69.532-155 155-155 155 69.533 155 155-69.532 155-155 155z" fill="#5fc314"/><g fill="#bedce6"><path d="m392 402h-70c-8.284 0-15-6.716-15-15s6.716-15 15-15h70c8.284 0 15 6.716 15 15s-6.716 15-15 15z"/><path d="m392 342h-70c-8.284 0-15-6.716-15-15s6.716-15 15-15h70c8.284 0 15 6.716 15 15s-6.716 15-15 15z"/></g></g></svg></a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="placeholder">
+            <div class="upside">
+              <a href="#" class="button"  id="darkModeToggle"><svg id="Capa_1 textDarkMode" enable-background="new 0 0 512 512" height="45" viewBox="0 0 512 512" width="45" xmlns="http://www.w3.org/2000/svg"><g><path d="m204.528 307.578c-79.012-79.311-100.359-194.572-64.069-293.324 3.522-9.585-7.331-18.108-15.829-12.428-15.85 10.594-30.853 22.998-44.716 37.223-106.387 109.162-105.025 284.681 2.992 392.235 108.354 107.89 283.322 107.62 391.342-.81 13.283-13.334 24.93-27.686 34.949-42.805 5.643-8.516-2.914-19.31-12.504-15.761-98.368 36.402-213.167 14.968-292.165-64.33z" fill="#fee97d"/><g><path d="m496.693 371.909c-20.035 7.414-40.752 12.427-61.709 15.043-108.66 93.429-272.253 88.776-375.437-13.966-19.759-19.674-35.932-41.629-48.547-65.029 12.419 45.273 36.398 87.973 71.906 123.329 108.354 107.89 283.322 107.62 391.342-.81 13.283-13.334 24.93-27.686 34.949-42.805 5.643-8.517-2.914-19.311-12.504-15.762z" fill="#fedf30"/></g><path d="m368.687 128.801 40.471 5.903c7.074 1.032 9.906 9.704 4.8 14.7l-29.345 28.713c-2.024 1.98-2.947 4.825-2.47 7.613l6.919 40.495c1.205 7.055-6.221 12.424-12.559 9.079l-36.11-19.056c-2.527-1.334-5.551-1.334-8.078 0l-36.11 19.056c-6.338 3.345-13.764-2.024-12.559-9.079l6.919-40.495c.476-2.788-.446-5.633-2.47-7.613l-29.345-28.713c-5.106-4.996-2.274-13.668 4.8-14.7l40.471-5.903c2.819-.411 5.254-2.183 6.509-4.736l18.065-36.742c3.164-6.435 12.353-6.435 15.517 0l18.065 36.742c1.256 2.553 3.691 4.324 6.51 4.736z" fill="#fee97d"/><g><path d="m413.959 149.403c5.106-4.996 2.274-13.668-4.8-14.7l-30.418-4.437-8.404 8.223c-7.713 7.546-11.23 18.388-9.414 29.015l1.823 10.671c2.414 14.129-12.459 24.88-25.151 18.182l-9.204-4.857c-9.632-5.083-21.157-5.083-30.789 0l-8.816 4.652-5.138 30.072c-1.205 7.055 6.221 12.424 12.559 9.079l36.11-19.056c2.527-1.334 5.551-1.334 8.078 0l36.11 19.056c6.338 3.345 13.764-2.024 12.559-9.079l-6.919-40.495c-.476-2.788.446-5.633 2.47-7.613z" fill="#fedf30"/></g></g></svg></a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="placeholder">
+            <div class="upside">
+              <a href="#">
+         <i class="fa fa-home"></i>
+                </a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="placeholder">
+            <div class="upside">
+         
+<img src="SVG/history-menu-SVG.svg" style="width: 62px; height: 62px; pointer-events: all;" id="sidebarOpen">
+</svg>
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="placeholder">
+            <div class="upside">
+              <a href="#" class="button"><i class="fa fa-trash"></i></a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="placeholder">
+            <div class="upside">
+              <a href="#" class="button"><i class="fa fa-battery-4" onclick="openWindowGuessGame()"></i></a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="placeholder">
+            <div class="upside">
+              <a href="#" class="button" onclick="openSettings()">
+                
+                <!--SVG FOR SETTINGS Copyright AirTramsFind 2020 / 2021-->
+
+                 <svg id="Layer_1" enable-background="new 0 0 510 510" height="45" viewBox="0 0 510 510" width="45" xmlns="http://www.w3.org/2000/svg"><g id="XMLID_3796_"><path id="XMLID_3753_" d="m0 0v465h187.5l17.5-232.5-17.5-232.5c-10.41 0-177.09 0-187.5 0z" fill="#f2f4f9"/><path id="XMLID_3751_" d="m187.5 0v465h86.581l100.919-225v-240z" fill="#dbf0f9"/><g id="XMLID_3795_"><path id="XMLID_3774_" d="m60 360h105v30h-105z" fill="#78c4f8"/></g><g id="XMLID_3794_"><path id="XMLID_3757_" d="m60 300h105v30h-105z" fill="#78c4f8"/></g><g id="XMLID_3793_"><path id="XMLID_3756_" d="m60 240h105v30h-105z" fill="#78c4f8"/></g><g id="XMLID_3792_"><path id="XMLID_3755_" d="m60 180h105v30h-105z" fill="#78c4f8"/></g><g id="XMLID_3775_"><path id="XMLID_3752_" d="m187.5 150h-127.5v-30h127.5l10.259 15z" fill="#2ee66b"/></g><g id="XMLID_3749_"><g><path id="XMLID_215_" d="m187.5 90c-15.411 0-111.987 0-127.5 0 0-10.492 0-19.508 0-30h127.5l8.5 15z" fill="#ff641a"/></g></g><g id="XMLID_3802_"><path id="XMLID_3830_" d="m187.5 120h127.5v30h-127.5z" fill="#24b383"/></g><g id="XMLID_3747_"><g><path id="XMLID_222_" d="m187.5 60h127.5v30h-127.5z" fill="#f03800"/></g></g><path id="XMLID_3825_" d="m345 375c0-16.568 13.431-30 30-30l15-39-15-66c-5.902 0-10.973 0-16.875 0-3.853 13.165-7.163 24.478-11.016 37.643-7.372 2.107-14.484 5.059-21.217 8.801-12.038-6.588-22.381-12.248-34.419-18.835-8.347 8.347-15.518 15.519-23.865 23.864 6.587 12.038 12.248 22.382 18.835 34.42-3.739 6.728-6.692 13.841-8.801 21.217-13.165 3.853-24.478 7.163-37.642 11.016v33.75c13.165 3.853 24.477 7.163 37.642 11.016 2.108 7.371 5.06 14.484 8.801 21.217-6.587 12.038-12.248 22.382-18.835 34.42 8.346 8.346 15.519 15.518 23.865 23.864 12.038-6.587 22.381-12.247 34.419-18.835 6.727 3.738 13.841 6.691 21.217 8.801 3.853 13.165 7.163 24.479 11.016 37.643h16.875l15-60-15-45c-16.568-.002-30-13.433-30-30.002z" fill="#5a5a5a"/><path id="XMLID_3822_" d="m510 391.875v-33.75l-37.642-11.016c-2.134-7.461-5.106-14.567-8.801-21.217l18.835-34.42-23.865-23.864-34.419 18.835c-6.65-3.695-13.756-6.668-21.217-8.801l-11.016-37.642h-16.875v105c16.568 0 30 13.432 30 30s-13.432 30-30 30v105h16.875l11.016-37.643c7.462-2.133 14.567-5.105 21.217-8.801l34.419 18.835 23.865-23.864-18.835-34.42c3.695-6.648 6.668-13.756 8.801-21.217z" fill="#444"/></g></svg>
+
+              </a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="placeholder">
+            <div class="upside">
+              <a href="#" class="button"><i class="fa fa-cloud"></i></a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="placeholder">
+            <div class="upside">
+              <a href="#" class="button"><i class="fa fa-wifi"></i></a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="placeholder">
+            <div class="upside">
+              <a href="#" class="button" onclick="openWindowMaps(), showMaps()">
+                
+                   <!--SVG FOR AIRTRAMSMAPS COPYRIGHT 2020 - 2021 AIRTRAMS GROUP-->
+
+                   <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 511.999 511.999; width: 50px;" xml:space="preserve" >
+                <g>
+                  <path style="fill:#44C868;" d="M511.879,475.685l-40.224-221.611c-0.401-2.212-1.773-4.128-3.739-5.221l-101.242-56.31
+                    c-1.314-0.732-2.787-1.023-4.234-0.911l18.419,237.608l-0.617,0.276l121.164,54.357c0.986,0.441,2.034,0.659,3.077,0.659
+                    c1.651,0,3.287-0.543,4.632-1.596C511.313,481.22,512.376,478.428,511.879,475.685z"/>
+                  <path style="fill:#44C868;" d="M256,246.375l-103.545-53.931c-1.241-0.647-2.617-0.911-3.972-0.82
+                    c0.359-0.022,0.72-0.02,1.078,0.008l-18.419,237.608l121.781,54.634c0.983,0.44,2.032,0.659,3.077,0.659l0,0V246.375z"/>
+                </g>
+                <g>
+                  <path style="fill:#4CE166;" d="M149.56,191.633c-1.447-0.112-2.92,0.179-4.234,0.91l-101.243,56.31
+                    c-1.966,1.093-3.338,3.008-3.739,5.221L0.121,475.685c-0.498,2.742,0.566,5.534,2.763,7.252c1.347,1.053,2.982,1.596,4.632,1.596
+                    c1.043,0,2.092-0.217,3.077-0.659l120.504-54.061L149.56,191.633z"/>
+                  <path style="fill:#4CE166;" d="M362.439,191.628c-0.996,0.077-1.981,0.342-2.894,0.818L256,246.376v238.158c0,0,0,0,0.001,0
+                    c1.045,0,2.095-0.218,3.077-0.659l121.781-54.634L362.439,191.628z"/>
+                </g>
+                <polygon style="fill:#FFDB56;" points="28.154,321.233 19.983,366.252 140.977,302.346 143.786,266.107 144.252,260.097 "/>
+                <path style="fill:#A8EEFC;" d="M142.066,288.294l-1.089,14.052L19.983,366.252L0.121,475.685c-0.498,2.742,0.566,5.534,2.763,7.252
+                  c1.347,1.053,2.982,1.596,4.632,1.596c1.043,0,2.092-0.217,3.077-0.659l120.504-54.061L142.066,288.294L142.066,288.294z"/>
+                <g>
+                  <polygon style="fill:#FFBB24;" points="256.03,276.08 144.252,260.097 140.977,302.346 256,477.025 256,413.507 187.363,305.429 
+                    256.03,313.642 	"/>
+                  <polygon style="fill:#FFBB24;" points="459.946,244.421 411.311,217.37 365.269,228.128 365.845,235.564 368.119,264.898 	"/>
+                </g>
+                <polygon style="fill:#FFDB56;" points="372.202,317.576 367.842,261.327 367.842,261.327 365.269,228.128 256.03,276.08 
+                  256.03,313.642 327.386,282.612 "/>
+                <path style="fill:#FFBB24;" d="M511.879,475.685l-10.103-55.666L368.119,264.898l4.084,52.678l137.07,165.221
+                  C511.357,481.07,512.364,478.358,511.879,475.685z"/>
+                <path style="fill:#FF4A4A;" d="M256.481,27.465c-57.963,0-105.12,47.118-105.12,105.034c0,35.826,17.009,74.29,50.556,114.322
+                  c24.639,29.403,48.943,48.314,49.966,49.105c1.354,1.047,2.976,1.57,4.599,1.57c1.622,0,3.245-0.523,4.599-1.57
+                  c1.022-0.791,25.327-19.702,49.966-49.105c33.547-40.032,50.556-78.495,50.556-114.322
+                  C361.601,74.583,314.444,27.465,256.481,27.465z M295.411,132.498c0,21.482-17.43,38.898-38.93,38.898
+                  c-21.5,0-38.93-17.415-38.93-38.898s17.43-38.898,38.93-38.898C277.981,93.6,295.411,111.016,295.411,132.498z"/>
+                <path style="fill:#E7343F;" d="M256.481,27.465c-4.594,0-9.119,0.298-13.559,0.872c51.583,6.667,91.562,50.836,91.562,104.162
+                  c0,35.826-17.009,74.29-50.556,114.322c-15.845,18.908-31.54,33.467-41.005,41.669c5.254,4.552,8.596,7.154,8.96,7.436
+                  c1.354,1.047,2.976,1.57,4.599,1.57c1.622,0,3.245-0.523,4.599-1.57c1.022-0.791,25.327-19.702,49.966-49.105
+                  c33.547-40.032,50.556-78.495,50.556-114.322C361.601,74.583,314.444,27.465,256.481,27.465z"/>
+                <path style="fill:#FFDB56;" d="M259.078,483.874l45.285-20.316L256,413.507v71.026c0,0,0,0,0.001,0
+                  C257.046,484.533,258.095,484.316,259.078,483.874z"/>
+                <g>
+                  <path style="fill:#1EA4E9;" d="M471.654,254.074c-0.401-2.212-1.773-4.128-3.739-5.221l-7.97-4.433l-91.827,20.477l0,0
+                    l133.656,155.121L471.654,254.074z"/>
+                  <path style="fill:#1EA4E9;" d="M255.999,484.533C256,484.533,256,484.533,255.999,484.533v-7.508L140.977,302.346l-9.837,126.895
+                    l121.781,54.634C253.904,484.316,254.953,484.533,255.999,484.533z"/>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="menu__arrow menu__arrow--top">
+      <ul>
+        <li>
+          <label for="degree--up-0"><div class="arrow"></div></label>
+          <label for="degree--up-1"><div class="arrow"></div></label>
+          <label for="degree--up-2"><div class="arrow"></div></label>
+        </li>
+      </ul>
+    </div>
+  </label>
+</section>
+
+
+
+<div class="sidebar">
+  <div class="logo-img">
+<img src="logo-airtramsfind.png" class="logo">
+  </div>
+  <nav>
+<ul>
+  <li>
+    <a href="#" class="startMenuButton">
+      <i class="fas fa-home"></i>
+      <p>Start Menu</p>
+    </a>
+  </li>
+  <li>
+    <a href="#" class="settingsBtn">
+      <i class="fas fa-cog"></i>
+      <p>Settings</p>
+    </a>
+  </li>
+
+  <li>
+    <a href="#" id="darkModeToggle">
+      <i class="fas fa-moon"></i>
+      <p id="textDarkMode">Dark Mode</p>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <i class="fas fa-question-circle"></i>
+      <p>Help and Support Center</p>
+    </a>
+  </li>
+  <li>
+    <a href="#">
+      <i class="fas fa-info-circle"></i>
+      <p>Troubleshooter</p>
+    </a>
+  </li>
+</ul>
+  </nav>
+</div>
+  
+<div id="brunoMessageBox">
+
+  <div class="brunoMessage" id="brunoMessage0">
+    <div id="mydivbrunoheader" class="mydivbrunoheader"><i class="fa fa-times" aria-hidden="true"  onclick="closeWindowsSearch()" id="closeIcon"></i></div>
+    <h1 id="h1-bruno">Am găsit niște lucruri interesante. Sunt bune?</h1>
+    <h3 id="brunoSearchResult"><details class="searchSummary" id="searchSummary">
+      <summary><strong>Aici</strong></summary>
+      <ul id="myUL">
+        <li><a href="#" id="myBtn">Windows XP are incă mai mulți utilizatori decât Windows 8, Vista și Chrome OS!</a></li>
+        <li><a href="#">Agnes</a></li>
+      
+        <li><a href="#">Billy</a></li>
+        <li><a href="#">Bob</a></li>
+      
+        <li><a href="#">Calvin</a></li>
+        <li><a href="#">Christina</a></li>
+        <li><a href="#">Cindy</a></li>
+      </ul>
+      
+      </details></h3>
+  </div>
+ 
+
+</div>
+
+
+<div id="mapsWindow">
+
+    <div id="mydiv4">
+                                             
+     <div id="mydivheader"><i class="fa fa-times" aria-hidden="true"  onclick="closeWindowMaps()" id="closeIcon"></i></div>
+
+     <div class="loaderMaps" id="loaderMaps" style="display: block;">
+
+      <!--LOADER MAPS LOGO Copyright 2020 / 2021 AirTramsFind 1.0-->
+
+      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="0 0 511.999 511.999" style="
+      enable-background:new 0 0 511.999 511.999;
+      width: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: block;
+       " xml:space="preserve" >
+   <g>
+     <path style="fill:#44C868;" d="M511.879,475.685l-40.224-221.611c-0.401-2.212-1.773-4.128-3.739-5.221l-101.242-56.31
+       c-1.314-0.732-2.787-1.023-4.234-0.911l18.419,237.608l-0.617,0.276l121.164,54.357c0.986,0.441,2.034,0.659,3.077,0.659
+       c1.651,0,3.287-0.543,4.632-1.596C511.313,481.22,512.376,478.428,511.879,475.685z"/>
+     <path style="fill:#44C868;" d="M256,246.375l-103.545-53.931c-1.241-0.647-2.617-0.911-3.972-0.82
+       c0.359-0.022,0.72-0.02,1.078,0.008l-18.419,237.608l121.781,54.634c0.983,0.44,2.032,0.659,3.077,0.659l0,0V246.375z"/>
+   </g>
+   <g>
+     <path style="fill:#4CE166;" d="M149.56,191.633c-1.447-0.112-2.92,0.179-4.234,0.91l-101.243,56.31
+       c-1.966,1.093-3.338,3.008-3.739,5.221L0.121,475.685c-0.498,2.742,0.566,5.534,2.763,7.252c1.347,1.053,2.982,1.596,4.632,1.596
+       c1.043,0,2.092-0.217,3.077-0.659l120.504-54.061L149.56,191.633z"/>
+     <path style="fill:#4CE166;" d="M362.439,191.628c-0.996,0.077-1.981,0.342-2.894,0.818L256,246.376v238.158c0,0,0,0,0.001,0
+       c1.045,0,2.095-0.218,3.077-0.659l121.781-54.634L362.439,191.628z"/>
+   </g>
+   <polygon style="fill:#FFDB56;" points="28.154,321.233 19.983,366.252 140.977,302.346 143.786,266.107 144.252,260.097 "/>
+   <path style="fill:#A8EEFC;" d="M142.066,288.294l-1.089,14.052L19.983,366.252L0.121,475.685c-0.498,2.742,0.566,5.534,2.763,7.252
+     c1.347,1.053,2.982,1.596,4.632,1.596c1.043,0,2.092-0.217,3.077-0.659l120.504-54.061L142.066,288.294L142.066,288.294z"/>
+   <g>
+     <polygon style="fill:#FFBB24;" points="256.03,276.08 144.252,260.097 140.977,302.346 256,477.025 256,413.507 187.363,305.429 
+       256.03,313.642 	"/>
+     <polygon style="fill:#FFBB24;" points="459.946,244.421 411.311,217.37 365.269,228.128 365.845,235.564 368.119,264.898 	"/>
+   </g>
+   <polygon style="fill:#FFDB56;" points="372.202,317.576 367.842,261.327 367.842,261.327 365.269,228.128 256.03,276.08 
+     256.03,313.642 327.386,282.612 "/>
+   <path style="fill:#FFBB24;" d="M511.879,475.685l-10.103-55.666L368.119,264.898l4.084,52.678l137.07,165.221
+     C511.357,481.07,512.364,478.358,511.879,475.685z"/>
+   <path style="fill:#FF4A4A;" d="M256.481,27.465c-57.963,0-105.12,47.118-105.12,105.034c0,35.826,17.009,74.29,50.556,114.322
+     c24.639,29.403,48.943,48.314,49.966,49.105c1.354,1.047,2.976,1.57,4.599,1.57c1.622,0,3.245-0.523,4.599-1.57
+     c1.022-0.791,25.327-19.702,49.966-49.105c33.547-40.032,50.556-78.495,50.556-114.322
+     C361.601,74.583,314.444,27.465,256.481,27.465z M295.411,132.498c0,21.482-17.43,38.898-38.93,38.898
+     c-21.5,0-38.93-17.415-38.93-38.898s17.43-38.898,38.93-38.898C277.981,93.6,295.411,111.016,295.411,132.498z"/>
+   <path style="fill:#E7343F;" d="M256.481,27.465c-4.594,0-9.119,0.298-13.559,0.872c51.583,6.667,91.562,50.836,91.562,104.162
+     c0,35.826-17.009,74.29-50.556,114.322c-15.845,18.908-31.54,33.467-41.005,41.669c5.254,4.552,8.596,7.154,8.96,7.436
+     c1.354,1.047,2.976,1.57,4.599,1.57c1.622,0,3.245-0.523,4.599-1.57c1.022-0.791,25.327-19.702,49.966-49.105
+     c33.547-40.032,50.556-78.495,50.556-114.322C361.601,74.583,314.444,27.465,256.481,27.465z"/>
+   <path style="fill:#FFDB56;" d="M259.078,483.874l45.285-20.316L256,413.507v71.026c0,0,0,0,0.001,0
+     C257.046,484.533,258.095,484.316,259.078,483.874z"/>
+   <g>
+     <path style="fill:#1EA4E9;" d="M471.654,254.074c-0.401-2.212-1.773-4.128-3.739-5.221l-7.97-4.433l-91.827,20.477l0,0
+       l133.656,155.121L471.654,254.074z"/>
+     <path style="fill:#1EA4E9;" d="M255.999,484.533C256,484.533,256,484.533,255.999,484.533v-7.508L140.977,302.346l-9.837,126.895
+       l121.781,54.634C253.904,484.316,254.953,484.533,255.999,484.533z"/>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   <g>
+   </g>
+   </svg>
+
+   <h1 style="
+   color: #000;
+   font-family: 'Poppins';
+   font-size: 21px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   ">Maps</h1>
+     </div>
+   
+     <div id='map' style="
+     width: 85vw;
+     height: 75vh;
+     z-index: 300;
+     display: none;
+     "></div> 
+     </div>
+     </div>
+     
+
+    </div>
+
+  <!--SETUP AIRTRAMSFIND-->
+
+<div id="setup">
+  <div class="page-1" id="page-1">
+    <h1 class="big-text">Bun venit la Setup!</h1>
+    
+    <div class="text-box">
+        <p>Ne bucurăm că ați ales AirTramsFind 1.0 Professional. Totuși, înainte
+        să începeți setup-ul, vă trebuie o cheie de produs, pe care o puteți
+        achiziționa din magazinul nostru online, oficial. Dacă aveți una, puteți 
+        continua setup-ul.
+        </p>
+    </div>
+    <div class="cute-dog-box">
+        <img src="images-primary/cute-dog.png" alt="cute-dog">
+    </div>
+    
+    <div class="next-button-box">
+        <button class="next-button" id="next-button-page-1">
+            Start <img src="images-primary/right-arrow.svg" style="display: inline-block; width: 10px;">
+        </button>
+    </div>
+    </div>
+    <div class="page-2" id="page-2">
+        <h1 class="big-text-p-2">Introduceți cheia de produs</h1>
+        <p class="big-text-p">Cheia de produs este dovada că ați plătit pentru produs.</p>
+        <div class="productKeySpace">
+            <input type="password" autocomplete="off">
+            <p style="color: #000; font-family: 'Poppins', sans-serif; display: inline-block;">- ATF -</p>
+            <input type="password" autocomplete="off">
+            <p style="color: #000; font-family: 'Poppins', sans-serif; display: inline-block;"> - </p>
+            <input type="password" autocomplete="off">
+        </div>
+        <div class="next-button-box-page-2">
+            <button class="next-button-page-2" id="next-button-page-2">
+                Check <img src="images-primary/right-arrow.svg" style="display: inline-block; width: 10px;">
+            </button>
+        </div>
+    </div>
+    <div class="page-3" id="page-3">
+        <h1 class="big-text-p-3">Să începem cu informațiile simple</h1>
+        <p class="big-text-p">Notă: numele contului Dvs. va fi: </p>
+        <div class="accountSettingsPart1Box">
+          <div class="stepCounterPage3">
+              <p style="display: inline-block; font-family: 'Poppins'; position: relative; left: 90%;">Pas:</p>
+              <p style="display: inline-block; font-family: 'Poppins'; font-weight: 300; position: relative; left: 90%;" id="counterStepsText">0/2</p>
+              <div class="step-1" id="step-1">
+              <p class="big-text-p">Selectați regiunea Dvs.</p>
+              <select id="countrySelect">
+                  <option value="Romania">România (RO)</option>
+              </select>
+              <button id="next-button-to-step-2">Continuă</button>
+            </div>
+             <div class="step-2-page-3" id="step-2-page-3" style="display: none;">
+              <p class="big-text-p">Doriți ca aplicația "Vreme" să fie setată de acum?</p>
+    
+              <input type="radio" name="Da" style="margin-left: 20px;"> <p style="display: inline-block; font-family: 'Poppins', sans-serif;">Da</p>
+              <input type="radio" name="Nu" style="margin-left: 20px;"> <p style="display: inline-block; font-family: 'Poppins', sans-serif;">Nu</p>
+              <button id="next-button-to-continue">Continuă</button>
+            </div>
+            </div>
+           
+    
+    
+    
+    
+    
+    
+        </div>
+        <div class="next-button-box-page-3">
+            <button class="next-button-page-3" id="next-button-page-3">
+                Check <img src="images-primary/right-arrow.svg" style="display: inline-block; width: 10px;">
+            </button>
+        </div>
+    </div>
+    
+    <div class="page-4" id="page-4">
+        <h1 class="big-text-p-4">Se instalează AirTramsFind</h1>  
+        <p>Deoarece toate lucrurile simple sunt gata, acum vă instalăm AirTramsFind Professional 1.0. Vă rugăm să vă relaxați. Va dura aproximativ 1 minut.</p>
+    
+        <div class="grey-box-p-4" style="height: 35px; width: 200px; background-color: #fff; border-radius: 5px; margin-left: 20px; position: absolute; bottom: 20px;">
+            <div id="myBar-p-4" style="height:35px; width:12%; background: green; border-radius: 5px;"></div>
+          </div>
+    </div>
+    <div class="page-5" id="page-5">
+        <h1 class="big-text-p-5">O mică întrebare...</h1>  
+        <p>în timpul acesta continuăm să instalăm componente...</p>
+    
+        <div class="questionbox-page-5">
+            <h3>Dorești un ceas analog sau digital pe home screen?</h3>
+            <p>În viitor, poți să modifici setările în Settings > Clock</p>
+            <label for="analog">
+           <input type='radio' name="analog">  <p style="display: inline-block; font-family: 'Poppins', sans-serif;">Ceas analog</p>
+        </label>
+        <label for="digital" style="display: block;">
+           <input type='radio' name="digital">  <p style="display: inline-block; font-family: 'Poppins', sans-serif;">Ceas digital</p>
+           </label>
+           <label for="none" style="display: block;">
+           <input type='radio' name="none">  <p style="display: inline-block; font-family: 'Poppins', sans-serif;">Fără</p>
+        </label>
+        </div>
+    
+        <div class="grey-box-p-5" style="height: 35px; width: 200px; background-color: #fff; border-radius: 5px; margin-left: 20px; position: absolute; bottom: 20px;">
+            <div id="myBar-p-5" style="height:35px; width:59%; background: green; border-radius: 5px;"></div>
+          </div>
+          <div class="next-button-box-page-5">
+            <button class="next-button" id="next-button-page-5">
+                Start <img src="images-primary/right-arrow.svg" style="display: inline-block; width: 10px;">
+            </button>
+        </div>
+    
+    </div>
+    
+    <div class="page-6" id="page-6">
+        <h1 class="big-text-p-6">Iți mulțumim</h1>  
+    
+        <div class="questionbox-page-5">
+            <h3>Ultimul lucru: ce culoare preferi mai mult?</h3>
+            <p>În viitor, poți să modifici setările în Settings > Color Theme</p>
+            <img src="images-primary/blue-theme-option.png">
+            <img src="images-primary/green-theme-option.png" style="margin-left: 20px;">
+        </div>
+    
+        <div class="grey-box-p-6" style="height: 35px; width: 200px; background-color: #fff; border-radius: 5px; margin-left: 20px; position: absolute; bottom: 20px;">
+            <div id="myBar-p-6" style="height:35px; width:100%; background: green; border-radius: 5px;"></div>
+          </div>
+    
+
+          <div class="next-button-box-page-6">
+            <button class="next-button" id="next-button-page-6">
+                Start <img src="images-primary/right-arrow.svg" style="display: inline-block; width: 10px;">
+            </button>
+        </div>
+
+    </div>
+    
+  </div>
+
+</div>
+
+</body>
+<script src="snake.js" defer type="module"></script>
+<script src="food.js" defer type="module"></script>
+<script src="grid.js" defer type="module"></script>
+<script src="input.js" defer type="module"></script>
+<script src="game.js" defer type="module"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js" defer></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js' defer></script>
+<script src="index.js" defer></script>
+<script src="personalize.js" defer></script>
+<script src="map.js" defer></script>
+<script src="darkMode.js" defer type="module"></script>
+<script type="text/javascript" src="vanilla-tilt.js" defer></script>
+<script src="gradientSettings.js" defer type="module"></script>
+<script src="historyMenu.js" defer></script>
+<script src="numberGuessGame.js" defer></script>
+<script src="searchJS.js" defer></script>
+<script src="setup.js" defer></script>
+<script src="fireBase.js"></script>
+<script src="main.js"></script>
+</html>

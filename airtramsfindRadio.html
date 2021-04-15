@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="airtramsfindRadio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AirTramsFind</title>
+</head>
+<body>
+  <div class="containerEmbed">
+
+    <button class="buttonModalOpen0">Open</button>
+
+    <div class="container0" id="container0" title="AirTramsClub">
+        <div class="row">
+          <div class="column left">
+            <span class="dot" style="background:#ED594A;"  onclick="goBack()">
+              <i class="fas fa-arrow-left"></i>
+            </span>
+            <span class="dot1" style="background:#FDD800;" onclick="goForward()">
+              <i class="fas fa-arrow-right"></i>
+            </span>
+            <span class="dot2" style="background:#5AC05A;"></span>
+          </div>
+          <div class="column middle">
+            <input type="text" value="https://www.airtramsclub.com" readonly="true">
+          </div>
+          <div class="column right">
+            <div style="float:right">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </div>
+      
+        <div class="content">
+          <embed src="https://airtramsclub.com/index.html" style="width: 100%; height: 85vh;">
+        </div>
+      </div>
+    </div>
+
+  </div>
+ 
+<div class="containerEmbed">
+
+  <button class="buttonModalOpen1">Open</button>
+  <div class="container1" id="container1" title="AirTramsFind">
+    <div class="row">
+      <div class="column left">
+        <span class="dot" id="dot-back" style="background:#ED594A;" onclick="goBack()">
+        
+        </span>
+        <span class="dot" style="background:#FDD800;">
+          
+        </span>
+        <span class="dot" style="background:#5AC05A;"></span>
+      </div>
+      <div class="column middle">
+        <input type="text" value="https://www.simpleflying.com" readonly="true">
+      </div>
+      <div class="column right">
+        <div style="float:right">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </div>
+  
+    <div class="content">
+      <embed src="https://simpleflying.com/" style="width: 100%; height: 85vh;">
+    </div>
+  </div>
+</div>
+</div>
+
+
+    <div class="down">
+    </div>
+
+    <script src="airtramsfindRadio.js"></script>
+</body>
+</html>

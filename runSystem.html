@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Run</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <button id="button" onclick="function1()">Trimite</button>
+</body>
+<script>
+    function function1() {
+        var input = document.getElementById("input").value;  
+        if( input === "Tu cauti vreodata pe Google?"){
+
+           // RASPUNSUL SIMPLU
+
+           const elem = document.createElement("div")
+           const elemText = document.createTextNode("Eeehhh, chiar vrei să răspund?")
+           elem.classList.add("answer");
+
+           // DIALOG BOX
+
+           /*
+
+           const elemDialogBox = document.createElement("div")
+           const elemDialogBoxButton1 = document.createElement("button")
+           const elemDialogBoxButton2 = document.createElement("button")
+           const elemDialogBox = document.createElement("div")
+           const elemDialogBoxText = document.createTextNode("Să îți spun?")
+
+           
+
+           elemDialogBox.style.width = "30%"
+           elemDialogBox.style.background = "cadetblue"
+
+           */
+
+           // APPENDING PENTRU SIMPLU
+           elem.appendChild(elemText)
+           document.body.appendChild(elem)
+
+           // APPENDING PENTRU DIALOG BOX
+
+           elemDialogBox.appendChild(elemDialogBoxText)
+           document.body.appendChild(elemDialogBox)
+        } else{
+            alert("Sorry, i dont know what you say...:("); 
+        }
+    }
+
+</script>
+</html>
